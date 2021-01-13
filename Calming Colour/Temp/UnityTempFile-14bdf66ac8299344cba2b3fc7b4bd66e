@@ -1,0 +1,462 @@
+/target:library
+/nowarn:0169
+/out:Temp/SteamVR.dll
+/debug:portable
+/optimize+
+/nostdlib+
+/preferreduilang:en-US
+/langversion:latest
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.AIModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.ARModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.AccessibilityModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.AnimationModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.AssetBundleModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.AudioModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.ClothModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.CoreModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.CrashReportingModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.DirectorModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.FileSystemHttpModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.GameCenterModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.GridModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.HotReloadModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.IMGUIModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.ImageConversionModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.InputModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.JSONSerializeModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.LocalizationModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.ParticleSystemModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.PerformanceReportingModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.PhysicsModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.Physics2DModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.ProfilerModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.ScreenCaptureModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.SharedInternalsModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.SpriteMaskModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.SpriteShapeModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.StreamingModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.StyleSheetsModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.SubstanceModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.TLSModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.TerrainModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.TerrainPhysicsModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.TextCoreModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.TextRenderingModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.TilemapModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.UIModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.UIElementsModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.UNETModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.UmbraModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityAnalyticsModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityConnectModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityTestProtocolModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityWebRequestModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityWebRequestAudioModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityWebRequestTextureModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityWebRequestWWWModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.VFXModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.VRModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.VehiclesModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.VideoModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.WindModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.XRModule.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/UnityExtensions/Unity/GUISystem/Standalone/UnityEngine.UI.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll
+/reference:"D:/Liminal VR/Calming-Colour/Calming Colour/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/Assemblies/Google.ProtocolBuffers.dll"
+/reference:"D:/Liminal VR/Calming-Colour/Calming Colour/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/Assemblies/Liminal.Cecil.dll"
+/reference:"D:/Liminal VR/Calming-Colour/Calming Colour/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/Assemblies/Newtonsoft.Json.dll"
+/reference:"D:/Liminal VR/Calming-Colour/Calming Colour/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/Assemblies/SevenZip.dll"
+/reference:"D:/Liminal VR/Calming-Colour/Calming Colour/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/Assemblies/Release/GVR.dll"
+/reference:"D:/Liminal VR/Calming-Colour/Calming Colour/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/Assemblies/Release/Liminal.SDK.dll"
+/reference:"D:/Liminal VR/Calming-Colour/Calming Colour/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/Assemblies/Release/Liminal.SDK.VR.Daydream.dll"
+/reference:"D:/Liminal VR/Calming-Colour/Calming Colour/Library/PackageCache/com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616/SDK/Frameworks/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll"
+/reference:"D:/Liminal VR/Calming-Colour/Calming Colour/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll"
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll
+/reference:D:/Unity/2019.1.10f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll
+/define:UNITY_2019_1_10
+/define:UNITY_2019_1
+/define:UNITY_2019
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2019_1_OR_NEWER
+/define:ENABLE_AUDIO
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_MICROPHONE
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_PHYSICS
+/define:ENABLE_SPRITES
+/define:ENABLE_GRID
+/define:ENABLE_TILEMAP
+/define:ENABLE_TERRAIN
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_DIRECTOR
+/define:ENABLE_UNET
+/define:ENABLE_LZMA
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_WEBCAM
+/define:ENABLE_WWW
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_HUB
+/define:ENABLE_CLOUD_PROJECT_ID
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_EDITOR_HUB
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_TIMELINE
+/define:ENABLE_EDITOR_METRICS
+/define:ENABLE_EDITOR_METRICS_CACHING
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:ENABLE_MANAGED_AUDIO_JOBS
+/define:INCLUDE_DYNAMIC_GI
+/define:INCLUDE_GI
+/define:ENABLE_MONO_BDWGC
+/define:PLATFORM_SUPPORTS_MONO
+/define:INCLUDE_PUBNUB
+/define:ENABLE_VIDEO
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_LOCALIZATION
+/define:PLATFORM_ANDROID
+/define:UNITY_ANDROID
+/define:UNITY_ANDROID_API
+/define:ENABLE_SUBSTANCE
+/define:ENABLE_EGL
+/define:ENABLE_NETWORK
+/define:ENABLE_RUNTIME_GI
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING
+/define:ENABLE_SCRIPTING_GC_WBARRIERS
+/define:PLATFORM_SUPPORTS_ADS_ID
+/define:UNITY_CAN_SHOW_SPLASH_SCREEN
+/define:ENABLE_VR
+/define:ENABLE_AR
+/define:UNITY_HAS_GOOGLEVR
+/define:UNITY_HAS_TANGO
+/define:ENABLE_SPATIALTRACKING
+/define:ENABLE_RUNTIME_PERMISSIONS
+/define:ENABLE_ENGINE_CODE_STRIPPING
+/define:UNITY_ASTC_ONLY_DECOMPRESS
+/define:ENABLE_UNITYADS_RUNTIME
+/define:UNITY_UNITYADS_API
+/define:ENABLE_MONO
+/define:NET_STANDARD_2_0
+/define:UNITY_POST_PROCESSING_STACK_V2
+/define:CSHARP_7_OR_LATER
+/define:CSHARP_7_3_OR_NEWER
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Extras\SteamVR_ForceSteamVRMode.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Extras\SteamVR_GazeTracker.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Extras\SteamVR_LaserPointer.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Extras\SteamVR_TestThrow.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Extras\SteamVR_TestTrackedCamera.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_BooleanEvent.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Pose_ConnectedChangedEvent.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Pose_DeviceIndexChangedEvent.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Pose_TrackingChangedEvent.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_PoseEvent.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_SingleEvent.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Skeleton_ConnectedChangedEvent.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Skeleton_TrackingChangedEvent.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_SkeletonEvent.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Vector2Event.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Vector3Event.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Action.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Action_Boolean.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Action_In.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Action_Out.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Action_Pose.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Action_Single.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Action_Skeleton.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Action_Vector2.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Action_Vector3.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Action_Vibration.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_ActionDirections.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_ActionSet.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_ActionSet_Manager.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_ActivateActionSetOnLoad.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Behaviour_Boolean.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Behaviour_Pose.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Behaviour_Single.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Behaviour_Skeleton.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Behaviour_SkeletonCustom.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Behaviour_Vector2.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Behaviour_Vector3.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_DefaultAction.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_DefaultActionSet.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Input.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Input_ActionFile.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Input_ActionScopes.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Input_ActionSetUsages.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Input_BindingFile.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Input_Generator_Names.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Input_References.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Input_Source.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Input_Sources.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Skeleton_Pose.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_Skeleton_Poser.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Input\SteamVR_UpdateModes.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\BodyCollider.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\CircularDrive.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\ComplexThrowable.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\ControllerHoverHighlight.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\CustomEvents.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\DebugUI.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\DestroyOnDetachedFromHand.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\DestroyOnParticleSystemDeath.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\DestroyOnTriggerEnter.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\DistanceHaptics.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\DontDestroyOnLoad.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\EnumFlags.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\Equippable.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\FallbackCameraController.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\GrabTypes.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\Hand.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\HandCollider.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\HandPhysics.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\HapticRack.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\HideOnHandFocusLost.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\HoverButton.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\IgnoreHovering.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\InputModule.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\Interactable.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\InteractableDebug.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\InteractableHoverEvents.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\ItemPackage.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\ItemPackageReference.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\ItemPackageSpawner.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\LinearAnimation.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\LinearAnimator.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\LinearAudioPitch.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\LinearBlendshape.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\LinearDisplacement.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\LinearDrive.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\LinearMapping.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\ModalThrowable.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\Player.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\PlaySound.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\RenderModel.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\SeeThru.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\SleepOnAwake.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\SoundDeparent.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\SoundPlayOneshot.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\SpawnAndAttachAfterControllerIsTracking.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\SpawnAndAttachToHand.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\Throwable.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\UIElement.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\Unparent.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\Util.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Core\Scripts\VelocityEstimator.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Hints\Scripts\ControllerButtonHints.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Longbow\Scripts\ArcheryTarget.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Longbow\Scripts\Arrow.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Longbow\Scripts\ArrowHand.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Longbow\Scripts\ArrowheadRotation.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Longbow\Scripts\Balloon.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Longbow\Scripts\BalloonColliders.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Longbow\Scripts\BalloonHapticBump.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Longbow\Scripts\BalloonSpawner.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Longbow\Scripts\ExplosionWobble.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Longbow\Scripts\FireSource.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Longbow\Scripts\Longbow.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Longbow\Scripts\SoundBowClick.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\BuggyBuddy\Audio\AmbientSound.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\BuggyBuddy\BuggyBuddy.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\BuggyBuddy\BuggyController.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\BuggyBuddy\LockToPoint.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\BuggyBuddy\trackCam.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\BuggyBuddy\trackObj.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\BuggyBuddy\WheelDust.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\Grenade\Grenade.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\JoeJeff\JoeJeff.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\JoeJeff\JoeJeffController.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\JoeJeff\JoeJeffGestures.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\JoeJeff\ProceduralHats.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\Scripts\ButtonEffect.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\Scripts\ButtonExample.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\Scripts\ControllerHintsExample.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\Scripts\CustomSkeletonHelper.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\Scripts\FloppyHand.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\Scripts\FlowerPlanted.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\Scripts\InteractableExample.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\Scripts\Planting.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\Scripts\RenderModelChangerUI.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\Scripts\SkeletonUIOptions.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\Scripts\TargetHitEffect.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\Scripts\TargetMeasurement.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Samples\Squishy\SquishyToy.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\SnapTurn\SnapTurn.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Teleport\Scripts\AllowTeleportWhileAttachedToHand.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Teleport\Scripts\ChaperoneInfo.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Teleport\Scripts\IgnoreTeleportTrace.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Teleport\Scripts\Teleport.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Teleport\Scripts\TeleportArc.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Teleport\Scripts\TeleportArea.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Teleport\Scripts\TeleportMarkerBase.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\InteractionSystem\Teleport\Scripts\TeleportPoint.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Plugins\openvr_api.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_Behaviour.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_Camera.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_CameraFlip.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_CameraMask.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_Ears.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_EnumEqualityComparer.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_Events.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_ExternalCamera.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_ExternalCamera_LegacyManager.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_Fade.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_Frustum.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_IK.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_LoadLevel.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_Menu.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_Overlay.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_PlayArea.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_Render.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_RenderModel.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_RingBuffer.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_Settings.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_Skybox.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_SphericalProjection.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_TrackedCamera.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_TrackedObject.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_TrackingReferenceManager.cs"
+"D:\Liminal VR\Calming-Colour\Calming Colour\Library\PackageCache\com.liminal.sdk@3ca0200eaad777e455a5ac3a076ab1e658b76616\SDK\Frameworks\SteamVR\Scripts\SteamVR_Utils.cs"
