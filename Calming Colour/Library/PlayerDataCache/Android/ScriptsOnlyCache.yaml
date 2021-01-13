@@ -25,7 +25,6 @@ ScriptsOnlyBuild:
     - Liminal.SDK.VR.Pointers.GazePointerVisual
     - Liminal.SDK.VR.Pointers.LaserPointerVisual
     - Liminal.SDK.VR.Pointers.ReticleVisual
-    - Liminal.SDK.VR.VRDeviceMonitor
     LiminalSdk.dll:
     - Liminal.SDK.VR.Avatars.Extensions.GazeInput
     - Liminal.SDK.VR.Devices.GearVR.GearVRCameraRig
@@ -41,15 +40,11 @@ ScriptsOnlyBuild:
     - OVRManager
     SteamVR.dll:
     - Valve.VR.SteamVR_Behaviour_Pose
-    - Valve.VR.SteamVR_Behaviour_Skeleton
     - Valve.VR.SteamVR_ExternalCamera
     - Valve.VR.SteamVR_PlayArea
     - Valve.VR.SteamVR_RenderModel
     - Valve.VR.SteamVR_Settings
     - Valve.VR.SteamVR_Skeleton_Pose
-    - Valve.VR.SteamVR_Skeleton_Poser
-    SteamVR_Input_Editor.dll:
-    - Valve.VR.SteamVR_Input_LiveWindow
     Unity.ProBuilder.Editor.dll:
     - UnityEditor.ProBuilder.EditorToolbar
     - UnityEditor.ProBuilder.ProBuilderEditor
@@ -80,15 +75,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
-      Script: {instanceID: 0}
-    - Class: 91
       Script: {instanceID: 0}
     - Class: 95
       Script: {instanceID: 0}
@@ -126,8 +117,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11646}
     - Class: 114
       Script: {instanceID: 11672}
-    - Class: 114
-      Script: {instanceID: 11912}
     - Class: 114
       Script: {instanceID: 12112}
     - Class: 114
@@ -173,17 +162,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13302}
     - Class: 114
-      Script: {instanceID: 13444}
-    - Class: 114
       Script: {instanceID: 13786}
     - Class: 114
       Script: {instanceID: 13792}
     - Class: 114
-      Script: {instanceID: 21942}
+      Script: {instanceID: 24692}
     - Class: 114
-      Script: {instanceID: 21970}
+      Script: {instanceID: 24720}
     - Class: 114
-      Script: {instanceID: 22138}
+      Script: {instanceID: 24870}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -2820,4 +2807,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/CalmingColour.unity
-  playerPath: C:/Users/Karl/Desktop/Calming Colour/Calming Colour/Build.apk
+  playerPath: C:/Users/Karl/Desktop/calming Colour.apk
