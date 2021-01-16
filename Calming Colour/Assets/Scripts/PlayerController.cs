@@ -7,8 +7,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
-    public GameObject box;
+    public Material colourSelection;
 
     // Update is called once per frame
     void Update()
@@ -18,7 +17,6 @@ public class PlayerController : MonoBehaviour
 
         if (primaryInput.GetButtonUp(VRButton.One))
         {
-            box.SetActive(false);
             //Trigger has been pressed and released
         }
 
