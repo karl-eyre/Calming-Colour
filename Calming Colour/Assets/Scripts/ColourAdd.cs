@@ -29,7 +29,11 @@ public class ColourAdd : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
         curentColour = raycastResult.gameObject.GetComponent<Renderer>().material;
 
         var controller = GameObject.Find("VRAvatar").GetComponent<PlayerController>();
-        raycastResult.gameObject.GetComponent<Renderer>().material = controller.colourSelection;
+
+        if (controller.colourSelection != null)
+        {
+            raycastResult.gameObject.GetComponent<Renderer>().material = controller.colourSelection;
+        }       
     }
 
     //Reset off of temp colour
