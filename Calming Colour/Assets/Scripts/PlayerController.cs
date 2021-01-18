@@ -16,16 +16,27 @@ public class PlayerController : MonoBehaviour
     public Slider completeMosaicSlider;
     bool completeMosaic = false;
 
+    public bool fastPlacePiece = false;
+
     void Update()
     { 
         var primaryInput = VRDevice.Device.PrimaryInputDevice;
+
+        if (primaryInput.GetButtonDown(VRButton.One))
+        {
+            fastPlacePiece = true;
+            print("You are now fast placing tiles");
+        }
+        if (primaryInput.GetButtonUp(VRButton.One))
+        {
+            fastPlacePiece = false;
+        }
 
         if (primaryInput.GetButtonDown(VRButton.Two))
         {
             Debug.Log("StartCompletingMosaic");
             completeMosaic = true;
         }
-
         if (primaryInput.GetButtonUp(VRButton.Two))
         {
             completeMosaicSlider.value = completeMosaicSlider.minValue;

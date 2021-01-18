@@ -34,22 +34,18 @@ public class ColourAdd : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 
         if (controller.colourSelection != null)
         {
-            var primaryInput = VRDevice.Device.PrimaryInputDevice;
-            
-            if (primaryInput.GetButton(VRButton.One) == true)
-            {
-                raycastResult.gameObject.GetComponent<Renderer>().material = controller.colourSelection;
-            } 
-            else
-            {
-                raycastResult.gameObject.GetComponent<Renderer>().material = controller.colourSelection;
-            }    
+            raycastResult.gameObject.GetComponent<Renderer>().material = controller.colourSelection;   
         }       
     }
 
     //Reset off of temp colour
     public void OnPointerExit(PointerEventData eventData)
     {
-        this.gameObject.GetComponent<Renderer>().material = curentColour;
+        var controller = GameObject.Find("VRAvatar").GetComponent<PlayerController>();
+
+        if (controller.fastPlacePiece == false) 
+        {
+            this.gameObject.GetComponent<Renderer>().material = curentColour;
+        }
     }
 }
