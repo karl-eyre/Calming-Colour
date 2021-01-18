@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using Liminal.SDK.VR;
+using Liminal.SDK.VR.Input;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -32,7 +34,16 @@ public class ColourAdd : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 
         if (controller.colourSelection != null)
         {
-            raycastResult.gameObject.GetComponent<Renderer>().material = controller.colourSelection;
+            var primaryInput = VRDevice.Device.PrimaryInputDevice;
+            
+            if (primaryInput.GetButton(VRButton.One) == true)
+            {
+                raycastResult.gameObject.GetComponent<Renderer>().material = controller.colourSelection;
+            } 
+            else
+            {
+                raycastResult.gameObject.GetComponent<Renderer>().material = controller.colourSelection;
+            }    
         }       
     }
 
