@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     public GameObject nextMosaicCanvas;
     public GameObject glassFinish;
 
+    public List<GameObject> completeCanvases;
+
     public Slider completeMosaicSlider;
     bool completeMosaic = false;
 
@@ -52,11 +54,29 @@ public class PlayerController : MonoBehaviour
             {
                 completeMosaicSlider.value = completeMosaicSlider.minValue;
                 completeMosaic = false;
-                Instantiate(glassFinish, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
-                GameObject mosaicClone = Instantiate(nextMosaicCanvas, mosaicCanvas.transform.position , mosaicCanvas.transform.rotation);
-                Destroy(mosaicCanvas);
+                GameObject glassFinishClone = Instantiate(glassFinish, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+                glassFinishClone.transform.parent = mosaicCanvas.transform;
+                GameObject mosaicClone = Instantiate(nextMosaicCanvas, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+                //Destroy(mosaicCanvas);
                 mosaicCanvas = mosaicClone;
             }
+        }
+        //Testing Only
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            completeMosaicSlider.value = completeMosaicSlider.minValue;
+            completeMosaic = false;
+            GameObject glassFinishClone = Instantiate(glassFinish, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+            glassFinishClone.transform.parent = mosaicCanvas.transform; 
+            GameObject mosaicClone = Instantiate(nextMosaicCanvas, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+            //Destroy(mosaicCanvas);
+
+            GameObject i = completeCanvases[Random.Range(0, (completeCanvases.Count))];
+            mosaicCanvas.transform.position = i.transform.position;
+            mosaicCanvas.transform.rotation = i.transform.rotation;
+            completeCanvases.Remove(i);
+
+            mosaicCanvas = mosaicClone;
         }
     }
 }
