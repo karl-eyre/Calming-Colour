@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject mosaicCanvas;
     public GameObject nextMosaicCanvas;
+    public GameObject glassFinish;
 
     public Slider completeMosaicSlider;
     bool completeMosaic = false;
@@ -51,6 +52,7 @@ public class PlayerController : MonoBehaviour
             {
                 completeMosaicSlider.value = completeMosaicSlider.minValue;
                 completeMosaic = false;
+                Instantiate(glassFinish, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
                 GameObject mosaicClone = Instantiate(nextMosaicCanvas, mosaicCanvas.transform.position , mosaicCanvas.transform.rotation);
                 Destroy(mosaicCanvas);
                 mosaicCanvas = mosaicClone;

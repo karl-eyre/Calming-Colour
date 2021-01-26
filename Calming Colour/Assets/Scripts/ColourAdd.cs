@@ -7,7 +7,6 @@ using UnityEngine.EventSystems;
 
 public class ColourAdd : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
-
     Material curentColour;
 
     //add new colour
