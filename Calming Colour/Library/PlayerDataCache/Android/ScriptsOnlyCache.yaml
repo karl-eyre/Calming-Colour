@@ -3,8 +3,10 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ColourAdd
     - ColourSelect
+    - ControllerColour
     - Liminal.Experience.MyExperienceApp
     - PlayerController
+    - SlingHeldColour
     GVR.dll:
     - GvrArmModel
     - GvrControllerInput
@@ -81,6 +83,8 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
+      Script: {instanceID: 0}
+    - Class: 54
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
@@ -201,11 +205,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12040}
     - Class: 114
-      Script: {instanceID: 195118}
+      Script: {instanceID: 210720}
     - Class: 114
-      Script: {instanceID: 195140}
+      Script: {instanceID: 210742}
     - Class: 114
-      Script: {instanceID: 195308}
+      Script: {instanceID: 210910}
+    - Class: 114
+      Script: {instanceID: 359518}
+    - Class: 114
+      Script: {instanceID: 524714}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -553,7 +561,7 @@ ScriptsOnlyBuild:
     className: SpinningCubeExample
   - hash:
       serializedVersion: 2
-      Hash: 91e5780ef7129525eefabd908f23a33f
+      Hash: 96ac651dc361111a34c2a94d7e87ae99
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1111,7 +1119,7 @@ ScriptsOnlyBuild:
     className: LinearAnimator
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 9711269b9a5f29fc757385e5d7ff933f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ColourSelect
@@ -2671,10 +2679,16 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 164221013889a03b3422d30debb35460
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: MosaicBoard
+    className: ControllerColour
+  - hash:
+      serializedVersion: 2
+      Hash: 983b5aa448c1fc9e279b40f42b797d3c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SlingHeldColour
   platform: 13
   scenePathNames:
   - Assets/Scenes/CalmingColour.unity

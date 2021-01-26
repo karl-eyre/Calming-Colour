@@ -5,18 +5,8 @@ using UnityEngine.EventSystems;
 
 public class ColourSelect : MonoBehaviour, IPointerClickHandler, IPointerDownHandler, IPointerUpHandler
 {
-
-    Material curentColour;
-
-    /*private void Update()
-    {
-        var primaryInput = VRDevice.Device.PrimaryInputDevice;
-
-        if (primaryInput.GetButtonUp(VRButton.Trigger))
-        {
-            box.SetActive(false);
-        }
-    }*/
+    public GameObject curentHeldColour;
+    public GameObject tileHomer;
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -25,6 +15,8 @@ public class ColourSelect : MonoBehaviour, IPointerClickHandler, IPointerDownHan
 
         var controller = GameObject.Find("VRAvatar").GetComponent<PlayerController>();
         controller.colourSelection = raycastResult.gameObject.GetComponent<Renderer>().material;
+        curentHeldColour.gameObject.GetComponent<Renderer>().material = raycastResult.gameObject.GetComponent<Renderer>().material;
+        tileHomer.gameObject.transform.position = eventData.pointerCurrentRaycast.worldPosition;
     }
 
     //Detect current clicks on the GameObject (the one with the script attached)

@@ -52,31 +52,32 @@ public class PlayerController : MonoBehaviour
 
             if (completeMosaicSlider.value >= completeMosaicSlider.maxValue)
             {
-                completeMosaicSlider.value = completeMosaicSlider.minValue;
-                completeMosaic = false;
-                GameObject glassFinishClone = Instantiate(glassFinish, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
-                glassFinishClone.transform.parent = mosaicCanvas.transform;
-                GameObject mosaicClone = Instantiate(nextMosaicCanvas, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
-                //Destroy(mosaicCanvas);
-                mosaicCanvas = mosaicClone;
+                CompleteMosaic();
             }
         }
+
         //Testing Only
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            completeMosaicSlider.value = completeMosaicSlider.minValue;
-            completeMosaic = false;
-            GameObject glassFinishClone = Instantiate(glassFinish, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
-            glassFinishClone.transform.parent = mosaicCanvas.transform; 
-            GameObject mosaicClone = Instantiate(nextMosaicCanvas, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
-            //Destroy(mosaicCanvas);
-
-            GameObject i = completeCanvases[Random.Range(0, (completeCanvases.Count))];
-            mosaicCanvas.transform.position = i.transform.position;
-            mosaicCanvas.transform.rotation = i.transform.rotation;
-            completeCanvases.Remove(i);
-
-            mosaicCanvas = mosaicClone;
+            CompleteMosaic();
         }
+    }
+
+    void CompleteMosaic()
+    {
+        completeMosaicSlider.value = completeMosaicSlider.minValue;
+        completeMosaic = false;
+        GameObject glassFinishClone = Instantiate(glassFinish, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+        glassFinishClone.transform.parent = mosaicCanvas.transform;
+        GameObject mosaicClone = Instantiate(nextMosaicCanvas, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+        //Destroy(mosaicCanvas);
+
+        GameObject i = completeCanvases[Random.Range(0, (completeCanvases.Count))];
+        mosaicCanvas.transform.parent = i.transform;
+        mosaicCanvas.transform.position = i.transform.position;
+        mosaicCanvas.transform.rotation = i.transform.rotation;
+        completeCanvases.Remove(i);
+
+        mosaicCanvas = mosaicClone;
     }
 }

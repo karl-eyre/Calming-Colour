@@ -9670,7 +9670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9046061676593112100}
   m_Layer: 0
-  m_Name: Mosaic Patern test (1) Variant
+  m_Name: Mosaic Patern Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
