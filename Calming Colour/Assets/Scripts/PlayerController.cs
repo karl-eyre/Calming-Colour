@@ -65,19 +65,24 @@ public class PlayerController : MonoBehaviour
 
     void CompleteMosaic()
     {
-        completeMosaicSlider.value = completeMosaicSlider.minValue;
-        completeMosaic = false;
-        GameObject glassFinishClone = Instantiate(glassFinish, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
-        glassFinishClone.transform.parent = mosaicCanvas.transform;
-        GameObject mosaicClone = Instantiate(nextMosaicCanvas, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
-        //Destroy(mosaicCanvas);
+        GameObject i = completeCanvases[0];
 
-        GameObject i = completeCanvases[Random.Range(0, (completeCanvases.Count))];
-        mosaicCanvas.transform.parent = i.transform;
-        mosaicCanvas.transform.position = i.transform.position;
-        mosaicCanvas.transform.rotation = i.transform.rotation;
-        completeCanvases.Remove(i);
+        if (i != null)
+        {
+            completeMosaicSlider.value = completeMosaicSlider.minValue;
+            completeMosaic = false;
+            GameObject glassFinishClone = Instantiate(glassFinish, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+            glassFinishClone.transform.parent = mosaicCanvas.transform;
+            GameObject mosaicClone = Instantiate(nextMosaicCanvas, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+            //Destroy(mosaicCanvas);
 
-        mosaicCanvas = mosaicClone;
+            //completeCanvases[Random.Range(0, (completeCanvases.Count))];
+            mosaicCanvas.transform.parent = i.transform;
+            mosaicCanvas.transform.position = i.transform.position;
+            mosaicCanvas.transform.rotation = i.transform.rotation;
+            completeCanvases.Remove(i);
+
+            mosaicCanvas = mosaicClone;
+        }
     }
 }
