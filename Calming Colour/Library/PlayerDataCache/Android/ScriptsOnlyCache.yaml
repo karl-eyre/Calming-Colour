@@ -94,6 +94,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -205,15 +209,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12040}
     - Class: 114
-      Script: {instanceID: 210720}
+      Script: {instanceID: 12072}
     - Class: 114
-      Script: {instanceID: 210742}
+      Script: {instanceID: 12148}
     - Class: 114
-      Script: {instanceID: 210910}
+      Script: {instanceID: 76050}
     - Class: 114
-      Script: {instanceID: 359518}
+      Script: {instanceID: 76072}
     - Class: 114
-      Script: {instanceID: 524714}
+      Script: {instanceID: 76240}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -223,6 +227,10 @@ ScriptsOnlyBuild:
     - Class: 137
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -2607,6 +2615,12 @@ ScriptsOnlyBuild:
     className: VelocityEstimator
   - hash:
       serializedVersion: 2
+      Hash: fae22ace2ab261d45a3b2d29f627e9dd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControllerColour
+  - hash:
+      serializedVersion: 2
       Hash: 8649814970b42d345b89944b862453cc
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -2655,6 +2669,12 @@ ScriptsOnlyBuild:
     className: LinearDrive
   - hash:
       serializedVersion: 2
+      Hash: 983b5aa448c1fc9e279b40f42b797d3c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SlingHeldColour
+  - hash:
+      serializedVersion: 2
       Hash: 75cd39a1f6026e63f483b86039e2c4cb
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR
@@ -2677,18 +2697,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ControllerColour
-  - hash:
-      serializedVersion: 2
-      Hash: 983b5aa448c1fc9e279b40f42b797d3c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SlingHeldColour
   platform: 13
   scenePathNames:
   - Assets/Scenes/CalmingColour.unity

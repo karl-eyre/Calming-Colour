@@ -14,8 +14,8 @@ public class SlingHeldColour : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        tileRig.AddForce((tileHolder.transform.position - transform.position) * 20);
+        tileRig.AddForce((tileHolder.transform.position - transform.position) * 40);
     }
 }
