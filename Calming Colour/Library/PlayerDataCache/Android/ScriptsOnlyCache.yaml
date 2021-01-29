@@ -3,9 +3,11 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ColourAdd
     - ColourSelect
+    - CompleteButton
     - ControllerColour
     - Liminal.Experience.MyExperienceApp
     - PlayerController
+    - ResetButton
     - SlingHeldColour
     GVR.dll:
     - GvrArmModel
@@ -30,6 +32,7 @@ ScriptsOnlyBuild:
     - Liminal.SDK.VR.Pointers.GazePointerVisual
     - Liminal.SDK.VR.Pointers.LaserPointerVisual
     - Liminal.SDK.VR.Pointers.ReticleVisual
+    - Liminal.SDK.VR.VRDeviceMonitor
     LiminalSdk.dll:
     - Liminal.SDK.VR.Avatars.Extensions.GazeInput
     - Liminal.SDK.VR.Devices.GearVR.GearVRCameraRig
@@ -52,6 +55,8 @@ ScriptsOnlyBuild:
     - Valve.VR.SteamVR_Settings
     - Valve.VR.SteamVR_Skeleton_Pose
     - Valve.VR.SteamVR_Skeleton_Poser
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.UI.CanvasScaler
@@ -194,27 +199,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11464}
     - Class: 114
-      Script: {instanceID: 11500}
+      Script: {instanceID: 11466}
     - Class: 114
-      Script: {instanceID: 11736}
+      Script: {instanceID: 11502}
     - Class: 114
-      Script: {instanceID: 11772}
+      Script: {instanceID: 11738}
     - Class: 114
-      Script: {instanceID: 11862}
+      Script: {instanceID: 11774}
     - Class: 114
-      Script: {instanceID: 12038}
+      Script: {instanceID: 11864}
     - Class: 114
       Script: {instanceID: 12040}
     - Class: 114
-      Script: {instanceID: 12072}
+      Script: {instanceID: 12042}
     - Class: 114
-      Script: {instanceID: 12148}
+      Script: {instanceID: 12074}
     - Class: 114
-      Script: {instanceID: 52080}
+      Script: {instanceID: 12150}
     - Class: 114
-      Script: {instanceID: 52102}
+      Script: {instanceID: 45380}
     - Class: 114
-      Script: {instanceID: 52270}
+      Script: {instanceID: 187466}
+    - Class: 114
+      Script: {instanceID: 187488}
+    - Class: 114
+      Script: {instanceID: 187656}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -566,7 +575,7 @@ ScriptsOnlyBuild:
     className: SpinningCubeExample
   - hash:
       serializedVersion: 2
-      Hash: 96ac651dc361111a34c2a94d7e87ae99
+      Hash: 8a75b6b5d12f8f70c0b964430b06ee0c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1124,7 +1133,7 @@ ScriptsOnlyBuild:
     className: LinearAnimator
   - hash:
       serializedVersion: 2
-      Hash: 74c2d96c54b48dd75a5240fd56f0f805
+      Hash: 8e56185cdbf836c381170b0721b3929d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ColourSelect
@@ -2319,6 +2328,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ResetButton
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR
     className: SteamVR_SphericalProjection
@@ -2694,6 +2709,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CompleteButton
   platform: 13
   scenePathNames:
   - Assets/Scenes/CalmingColour.unity

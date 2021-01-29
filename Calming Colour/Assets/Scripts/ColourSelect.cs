@@ -8,9 +8,13 @@ public class ColourSelect : MonoBehaviour, IPointerClickHandler, IPointerDownHan
     public GameObject curentHeldColour;
     public GameObject tileHomer;
 
+    public Material Material1;
+    public Material Material2;
+
     public void OnPointerClick(PointerEventData eventData)
     {
         var raycastResult = eventData.pointerCurrentRaycast;
+
         //Debug.Log("You have clicked" + raycastResult.gameObject.GetComponent<Renderer>().material);
 
         var controller = GameObject.Find("VRAvatar").GetComponent<PlayerController>();

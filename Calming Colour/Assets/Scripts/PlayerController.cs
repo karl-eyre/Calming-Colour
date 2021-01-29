@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public List<GameObject> completeCanvases;
 
     public Slider completeMosaicSlider;
-    bool completeMosaic = false;
+    public bool completeMosaic = false;
 
     public bool fastPlacePiece = false;
 
@@ -33,6 +33,9 @@ public class PlayerController : MonoBehaviour
         if (primaryInput.GetButtonUp(VRButton.One))
         {
             fastPlacePiece = false;
+
+            completeMosaicSlider.value = completeMosaicSlider.minValue;
+            completeMosaic = false;
         }
 
         if (primaryInput.GetButtonDown(VRButton.Two))
@@ -46,20 +49,24 @@ public class PlayerController : MonoBehaviour
             completeMosaic = false;
         }
 
+        //Testing Only
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            CompleteMosaic();
+            //resetCanvas();
+        }
+    }
+
+    private void FixedUpdate()
+    {
         if (completeMosaic == true)
         {
-            completeMosaicSlider.value += 0.5f;
+            completeMosaicSlider.value += 0.7f;
 
             if (completeMosaicSlider.value >= completeMosaicSlider.maxValue)
             {
                 CompleteMosaic();
             }
-        }
-
-        //Testing Only
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            CompleteMosaic();
         }
     }
 
@@ -85,4 +92,12 @@ public class PlayerController : MonoBehaviour
             mosaicCanvas = mosaicClone;
         }
     }
+
+    public void resetCanvas()
+    {
+        GameObject mosaicClone = Instantiate(nextMosaicCanvas, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+        Destroy(mosaicCanvas);
+        mosaicCanvas = mosaicClone;
+    }
+
 }
