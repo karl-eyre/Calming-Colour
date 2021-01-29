@@ -8,24 +8,14 @@ public class ColourSelect : MonoBehaviour, IPointerClickHandler, IPointerDownHan
     public GameObject curentHeldColour;
     public GameObject tileHomer;
 
-    public Material currentMaterial;
-
-    private void Start()
-    {
-        if (currentMaterial == false)
-        {
-            currentMaterial = this.gameObject.GetComponent<Renderer>().material;
-        }
-    }
-
     public void OnPointerClick(PointerEventData eventData)
     {
         var raycastResult = eventData.pointerCurrentRaycast;
         //Debug.Log("You have clicked" + raycastResult.gameObject.GetComponent<Renderer>().material);
 
         var controller = GameObject.Find("VRAvatar").GetComponent<PlayerController>();
-        controller.colourSelection = currentMaterial; //raycastResult.gameObject.GetComponent<Renderer>().material;
-        curentHeldColour.gameObject.GetComponent<Renderer>().material = currentMaterial; //raycastResult.gameObject.GetComponent<Renderer>().material;
+        controller.colourSelection = raycastResult.gameObject.GetComponent<Renderer>().material;
+        curentHeldColour.gameObject.GetComponent<Renderer>().material = raycastResult.gameObject.GetComponent<Renderer>().material;
         tileHomer.gameObject.transform.position = eventData.pointerCurrentRaycast.worldPosition;
     }
 
