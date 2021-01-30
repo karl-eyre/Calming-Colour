@@ -8,9 +8,6 @@ public class ColourSelect : MonoBehaviour, IPointerClickHandler, IPointerDownHan
     public GameObject curentHeldColour;
     public GameObject tileHomer;
 
-    public Material Material1;
-    public Material Material2;
-
     public void OnPointerClick(PointerEventData eventData)
     {
         var raycastResult = eventData.pointerCurrentRaycast;
@@ -26,13 +23,13 @@ public class ColourSelect : MonoBehaviour, IPointerClickHandler, IPointerDownHan
     //Detect current clicks on the GameObject (the one with the script attached)
     public void OnPointerDown(PointerEventData eventData)
     {
-        //this.gameObject.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+        this.gameObject.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
     }
 
     //Detect if clicks are no longer registering
     public void OnPointerUp(PointerEventData eventData)
     {
-        //this.gameObject.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
+        this.gameObject.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
     }
 
 }
