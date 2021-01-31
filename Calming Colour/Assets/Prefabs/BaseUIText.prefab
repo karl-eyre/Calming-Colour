@@ -29,7 +29,7 @@ RectTransform:
   m_GameObject: {fileID: 2667032001504557627}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 4.13}
-  m_LocalScale: {x: 0.0005055201, y: 0.0005055201, z: 0.0005055201}
+  m_LocalScale: {x: -0.0007149866, y: 0.0007149866, z: 0.0007149866}
   m_Children:
   - {fileID: 2667032001513740963}
   - {fileID: 2667032001875382325}
@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.21313865, b: 0.6320754, a: 0.78431374}
+  m_Color: {r: 0, g: 0.15188092, b: 0.4528302, a: 0.63529414}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -133,7 +133,7 @@ RectTransform:
   m_GameObject: {fileID: 2667032001513740960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2607, y: 1.4984679, z: 1.2607}
   m_Children: []
   m_Father: {fileID: 2667032001504557626}
   m_RootOrder: 0
@@ -141,7 +141,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -30, y: -30}
+  m_SizeDelta: {x: -200, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2667032001513740957
 CanvasRenderer:
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.71931314, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -258,7 +258,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press and hold to complete and save you mosaic
+  m_Text: Click on a colour to start placing tiles
 --- !u!1 &6830609247139989333
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,11 +350,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Held Tile Particle System
       objectReference: {fileID: 0}
-    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -427,27 +422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
-      propertyPath: m_SortMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
-        type: 3}
-      propertyPath: m_RenderAlignment
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
-        type: 3}
       propertyPath: m_UseCustomVertexStreams
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
-        type: 3}
-      propertyPath: m_ApplyActiveColorSpace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
-        type: 3}
-      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440994, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,

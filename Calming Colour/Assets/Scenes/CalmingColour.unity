@@ -1769,7 +1769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 96283062}
   m_Layer: 5
-  m_Name: Help Tooltips
+  m_Name: Tooltips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1791,9 +1791,8 @@ RectTransform:
   - {fileID: 1504327222}
   - {fileID: 822906637}
   - {fileID: 839633822}
-  - {fileID: 899731168}
   m_Father: {fileID: 1155360036}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19450,7 +19449,7 @@ GameObject:
   - component: {fileID: 899731170}
   - component: {fileID: 899731169}
   m_Layer: 5
-  m_Name: Cube
+  m_Name: Tooltips Loader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19465,11 +19464,11 @@ RectTransform:
   m_GameObject: {fileID: 899731167}
   m_LocalRotation: {x: -0, y: 0.40357998, z: -0, w: 0.9149444}
   m_LocalPosition: {x: 0, y: 0, z: 4.042}
-  m_LocalScale: {x: 0.42421, y: 0.42421, z: 0.00917439}
+  m_LocalScale: {x: 0.42421013, y: 0.42421, z: 0.009174395}
   m_Children:
   - {fileID: 1614018371}
-  m_Father: {fileID: 96283062}
-  m_RootOrder: 5
+  m_Father: {fileID: 1155360036}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 47.604004, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -22085,7 +22084,7 @@ PrefabInstance:
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.183
+      value: 0.18299866
       objectReference: {fileID: 0}
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
@@ -22157,6 +22156,11 @@ PrefabInstance:
       propertyPath: playerHead
       value: 
       objectReference: {fileID: 1041460525}
+    - target: {fileID: 767552322608782135, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
+        type: 3}
+      propertyPath: NoiseModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc, type: 3}
 --- !u!1 &1053305542 stripped
@@ -23974,6 +23978,7 @@ RectTransform:
   m_Children:
   - {fileID: 1423845757}
   - {fileID: 672175198}
+  - {fileID: 899731168}
   - {fileID: 96283062}
   m_Father: {fileID: 1123789506}
   m_RootOrder: 1
@@ -32074,26 +32079,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: -0.0007149866
-      objectReference: {fileID: 0}
-    - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.0007149866
-      objectReference: {fileID: 0}
-    - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0007149866
-      objectReference: {fileID: 0}
-    - target: {fileID: 2667032001875382324, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
-        type: 3}
-      propertyPath: m_Text
-      value: Click on a colour to start placing tiles
       objectReference: {fileID: 0}
     - target: {fileID: 3045664118852692489, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
@@ -45297,7 +45282,7 @@ PrefabInstance:
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.226
+      value: -0.22600174
       objectReference: {fileID: 0}
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
