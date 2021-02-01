@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class ClosePanel : MonoBehaviour, IPointerClickHandler
 {
     public GameObject playerHead;
+    public GameObject followUpTooltip;
 
     private void FixedUpdate()
     {
@@ -15,5 +16,14 @@ public class ClosePanel : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     { 
         this.gameObject.SetActive(false);
+
+        if (followUpTooltip != null)
+        {
+            if (followUpTooltip.activeInHierarchy == false)
+            {
+                print("activate tooltip");
+                followUpTooltip.SetActive(true);
+            }     
+        }   
     }
 }

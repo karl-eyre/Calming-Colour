@@ -1786,10 +1786,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1772312164}
-  - {fileID: 997192583}
   - {fileID: 1504327222}
   - {fileID: 822906637}
+  - {fileID: 1772312164}
+  - {fileID: 997192583}
   - {fileID: 839633822}
   m_Father: {fileID: 1155360036}
   m_RootOrder: 3
@@ -17415,6 +17415,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Place A tile
       objectReference: {fileID: 0}
+    - target: {fileID: 2667032001504557627, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17453,7 +17458,7 @@ PrefabInstance:
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
@@ -17545,6 +17550,11 @@ PrefabInstance:
       propertyPath: playerHead
       value: 
       objectReference: {fileID: 1041460525}
+    - target: {fileID: 3045664118852692489, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
+        type: 3}
+      propertyPath: followUpTooltip
+      value: 
+      objectReference: {fileID: 1371001690}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc, type: 3}
 --- !u!224 &822906637 stripped
@@ -19488,11 +19498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tooltips:
-  - {fileID: 432154405}
-  - {fileID: 802980705}
   - {fileID: 1858259224}
-  - {fileID: 1313726220}
-  - {fileID: 1371001690}
 --- !u!65 &899731170
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22026,6 +22032,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ResetUI
       objectReference: {fileID: 0}
+    - target: {fileID: 2667032001504557627, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22064,7 +22075,7 @@ PrefabInstance:
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
@@ -22156,6 +22167,11 @@ PrefabInstance:
       propertyPath: playerHead
       value: 
       objectReference: {fileID: 1041460525}
+    - target: {fileID: 3045664118852692489, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
+        type: 3}
+      propertyPath: followUpTooltip
+      value: 
+      objectReference: {fileID: 1313726220}
     - target: {fileID: 767552322608782135, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
       propertyPath: NoiseModule.enabled
@@ -32013,7 +32029,7 @@ PrefabInstance:
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
@@ -32085,6 +32101,11 @@ PrefabInstance:
       propertyPath: playerHead
       value: 
       objectReference: {fileID: 1041460525}
+    - target: {fileID: 3045664118852692489, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
+        type: 3}
+      propertyPath: followUpTooltip
+      value: 
+      objectReference: {fileID: 802980705}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc, type: 3}
 --- !u!224 &1504327222 stripped
@@ -34315,7 +34336,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 139
+    m_FontSize: 108
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -40047,6 +40068,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CompletMosaic
       objectReference: {fileID: 0}
+    - target: {fileID: 2667032001504557627, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45224,6 +45250,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CompleteUI
       objectReference: {fileID: 0}
+    - target: {fileID: 2667032001504557627, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45262,7 +45293,7 @@ PrefabInstance:
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
@@ -45349,6 +45380,11 @@ PrefabInstance:
       propertyPath: playerHead
       value: 
       objectReference: {fileID: 1041460525}
+    - target: {fileID: 3045664118852692489, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
+        type: 3}
+      propertyPath: followUpTooltip
+      value: 
+      objectReference: {fileID: 432154405}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc, type: 3}
 --- !u!1001 &6415523160233239504

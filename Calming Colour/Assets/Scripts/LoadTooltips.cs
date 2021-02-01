@@ -10,7 +10,7 @@ public class LoadTooltips : MonoBehaviour, IPointerClickHandler
     // Update is called once per frame
     void Start()
     {
-        TooltipSwitch(true);
+        //TooltipSwitch(true);
     }
 
     public void OnPointerClick(PointerEventData eventData)
