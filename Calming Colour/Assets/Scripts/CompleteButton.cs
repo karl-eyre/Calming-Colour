@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 
 public class CompleteButton : MonoBehaviour, IPointerClickHandler
 {
+
     public void OnPointerClick(PointerEventData eventData)
     {
         var primaryInput = VRDevice.Device.PrimaryInputDevice;

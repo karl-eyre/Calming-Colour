@@ -6,11 +6,13 @@ ScriptsOnlyBuild:
     - ColourSelect
     - CompleteButton
     - ControllerColour
+    - CurserHighlight
     - Liminal.Experience.MyExperienceApp
     - LoadTooltips
     - PlayerController
     - ResetButton
     - SlingHeldColour
+    - SwapMosaic
     GVR.dll:
     - GvrArmModel
     - GvrControllerInput
@@ -63,6 +65,7 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
@@ -125,6 +128,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9952}
     - Class: 114
+      Script: {instanceID: 9956}
+    - Class: 114
       Script: {instanceID: 9960}
     - Class: 114
       Script: {instanceID: 9994}
@@ -151,85 +156,89 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10684}
     - Class: 114
-      Script: {instanceID: 10776}
+      Script: {instanceID: 10762}
     - Class: 114
-      Script: {instanceID: 10784}
+      Script: {instanceID: 10778}
     - Class: 114
-      Script: {instanceID: 10790}
+      Script: {instanceID: 10786}
     - Class: 114
-      Script: {instanceID: 10794}
+      Script: {instanceID: 10792}
     - Class: 114
-      Script: {instanceID: 10820}
+      Script: {instanceID: 10796}
     - Class: 114
-      Script: {instanceID: 10862}
+      Script: {instanceID: 10822}
     - Class: 114
-      Script: {instanceID: 10964}
+      Script: {instanceID: 10864}
     - Class: 114
-      Script: {instanceID: 11104}
+      Script: {instanceID: 10966}
     - Class: 114
-      Script: {instanceID: 11110}
+      Script: {instanceID: 11106}
     - Class: 114
       Script: {instanceID: 11112}
     - Class: 114
-      Script: {instanceID: 11116}
+      Script: {instanceID: 11114}
     - Class: 114
       Script: {instanceID: 11118}
     - Class: 114
       Script: {instanceID: 11120}
     - Class: 114
-      Script: {instanceID: 11128}
+      Script: {instanceID: 11122}
     - Class: 114
       Script: {instanceID: 11130}
     - Class: 114
-      Script: {instanceID: 11134}
+      Script: {instanceID: 11132}
     - Class: 114
       Script: {instanceID: 11136}
     - Class: 114
-      Script: {instanceID: 11142}
+      Script: {instanceID: 11138}
     - Class: 114
-      Script: {instanceID: 11148}
+      Script: {instanceID: 11144}
     - Class: 114
-      Script: {instanceID: 11154}
+      Script: {instanceID: 11150}
     - Class: 114
       Script: {instanceID: 11156}
     - Class: 114
-      Script: {instanceID: 11168}
+      Script: {instanceID: 11158}
     - Class: 114
-      Script: {instanceID: 11240}
+      Script: {instanceID: 11170}
     - Class: 114
-      Script: {instanceID: 11350}
+      Script: {instanceID: 11242}
     - Class: 114
       Script: {instanceID: 11352}
     - Class: 114
-      Script: {instanceID: 11446}
+      Script: {instanceID: 11354}
     - Class: 114
       Script: {instanceID: 11448}
     - Class: 114
-      Script: {instanceID: 11470}
+      Script: {instanceID: 11450}
     - Class: 114
       Script: {instanceID: 11472}
     - Class: 114
-      Script: {instanceID: 11508}
+      Script: {instanceID: 11474}
     - Class: 114
-      Script: {instanceID: 11744}
+      Script: {instanceID: 11510}
     - Class: 114
-      Script: {instanceID: 11780}
+      Script: {instanceID: 11746}
     - Class: 114
-      Script: {instanceID: 11870}
+      Script: {instanceID: 11782}
     - Class: 114
-      Script: {instanceID: 12046}
+      Script: {instanceID: 11872}
     - Class: 114
       Script: {instanceID: 12048}
     - Class: 114
-      Script: {instanceID: 12080}
+      Script: {instanceID: 12050}
     - Class: 114
-      Script: {instanceID: 12156}
+      Script: {instanceID: 12082}
     - Class: 114
-      Script: {instanceID: 57986}
+      Script: {instanceID: 12158}
     - Class: 114
-      Script: {instanceID: 58008}
+      Script: {instanceID: 101808}
     - Class: 114
-      Script: {instanceID: 58176}
+      Script: {instanceID: 162068}
+    - Class: 114
+      Script: {instanceID: 162090}
+    - Class: 114
+      Script: {instanceID: 162258}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -581,7 +590,7 @@ ScriptsOnlyBuild:
     className: SpinningCubeExample
   - hash:
       serializedVersion: 2
-      Hash: 8a75b6b5d12f8f70c0b964430b06ee0c
+      Hash: 7f5e23c4a9ed8612881ffde89ba295f2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1431,6 +1440,12 @@ ScriptsOnlyBuild:
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR.InteractionSystem.Sample
     className: JoeJeff
+  - hash:
+      serializedVersion: 2
+      Hash: a14ad43d65ed8d33b6465f6bac61e2e6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwapMosaic
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2733,6 +2748,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 2c2e782208b6a97404fe1cd94c191d8d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CurserHighlight
   platform: 13
   scenePathNames:
   - Assets/Scenes/CalmingColour.unity

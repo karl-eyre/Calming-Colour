@@ -84,14 +84,18 @@ public class PlayerController : MonoBehaviour
             completeMosaic = false;
             GameObject glassFinishClone = Instantiate(glassFinish, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
             glassFinishClone.transform.parent = mosaicCanvas.transform;
-            GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic + 1], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+
+            int x = whichMosaic;
+            ChangeMosaicCount(1);
+            GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
 
             mosaicCanvas.transform.parent = i.transform;
             mosaicCanvas.transform.position = i.transform.position;
             mosaicCanvas.transform.rotation = i.transform.rotation;
             completeCanvases.Remove(i);
 
-            ChangeMosaicCount(1);
+            futureMosaics.Remove(futureMosaics[x]);
+            
             mosaicCanvas = mosaicClone;
         }
     }
