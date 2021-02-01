@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour
 {
     public Material colourSelection;
 
+    public List<GameObject> futureMosaics;
+
+    int whichMosaic = 0;
+
     public GameObject mosaicCanvas;
     public GameObject nextMosaicCanvas;
     public GameObject glassFinish;
@@ -80,15 +84,14 @@ public class PlayerController : MonoBehaviour
             completeMosaic = false;
             GameObject glassFinishClone = Instantiate(glassFinish, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
             glassFinishClone.transform.parent = mosaicCanvas.transform;
-            GameObject mosaicClone = Instantiate(nextMosaicCanvas, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
-            //Destroy(mosaicCanvas);
+            GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic + 1], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
 
-            //completeCanvases[Random.Range(0, (completeCanvases.Count))];
             mosaicCanvas.transform.parent = i.transform;
             mosaicCanvas.transform.position = i.transform.position;
             mosaicCanvas.transform.rotation = i.transform.rotation;
             completeCanvases.Remove(i);
 
+            ChangeMosaicCount(1);
             mosaicCanvas = mosaicClone;
         }
     }
@@ -98,6 +101,31 @@ public class PlayerController : MonoBehaviour
         GameObject mosaicClone = Instantiate(nextMosaicCanvas, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
         Destroy(mosaicCanvas);
         mosaicCanvas = mosaicClone;
+    }
+
+    public void SwapMosaic(int i)
+    {
+        ChangeMosaicCount(i);
+        GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+        Destroy(mosaicCanvas);
+        mosaicCanvas = mosaicClone;
+    }
+
+    void ChangeMosaicCount(int i)
+    {
+        if (whichMosaic + i >= futureMosaics.Count)
+        {
+            whichMosaic += i - futureMosaics.Count;
+        }
+        else if(whichMosaic + i < 0)
+        {
+            whichMosaic += futureMosaics.Count + i;
+        }
+        else
+        {
+            whichMosaic += i;
+        }
+        print(whichMosaic);
     }
 
 }
