@@ -106,6 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHead: {fileID: 0}
+  followUpTooltip: {fileID: 0}
 --- !u!1 &2667032001513740960
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,27 +409,47 @@ PrefabInstance:
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.124173
+      value: 4.051957
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.124173
+      value: 4.051957
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.124173
+      value: 4.051957
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_UseCustomVertexStreams
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
+        type: 3}
+      propertyPath: m_RenderAlignment
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440994, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415523160374440994, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415523160374440994, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415523160374440994, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
+        type: 3}
+      propertyPath: moveWithTransform
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c5f207ba0d720d43b7ac50173ec7b1a, type: 3}

@@ -4785,7 +4785,9 @@ MonoBehaviour:
   futureMosaics:
   - {fileID: 1632569996252564206, guid: 655f9cad6a48502428d1258e20d4b1e8, type: 3}
   - {fileID: 6689129221463484229, guid: 6aeba099a4ad1c644b4e013d1b253e26, type: 3}
-  - {fileID: 8225084797162298346, guid: ac3a326872d6a9843b2eda12f4ff92bd, type: 3}
+  - {fileID: 4848467295820059818, guid: 548d11f763a31644896dac45480a38e8, type: 3}
+  - {fileID: 4353201907992747961, guid: e13eb868634af6749bce169428c6f883, type: 3}
+  - {fileID: 6768745902003126166, guid: 99f8ccc78855a584c9455bb37dab2e64, type: 3}
   mosaicCanvas: {fileID: 381582556}
   nextMosaicCanvas: {fileID: 1632569996252564206, guid: 655f9cad6a48502428d1258e20d4b1e8,
     type: 3}
@@ -7918,17 +7920,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 59c56f620a43e37439eb88cb91157a02,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.016077
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 59c56f620a43e37439eb88cb91157a02,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4989
+      value: 0.498
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 59c56f620a43e37439eb88cb91157a02,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.018101
+      value: -0.022
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 59c56f620a43e37439eb88cb91157a02,
         type: 3}
@@ -32415,7 +32417,7 @@ PrefabInstance:
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.3790016
+      value: 1.297
       objectReference: {fileID: 0}
     - target: {fileID: 2667032001504557626, guid: ba2b60c91cce1b94bbd1a61b5f8a59bc,
         type: 3}
