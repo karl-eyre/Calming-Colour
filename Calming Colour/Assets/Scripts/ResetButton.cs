@@ -10,6 +10,7 @@ public class ResetButton : MonoBehaviour, IPointerClickHandler
     {
         var controller = GameObject.Find("VRAvatar").GetComponent<PlayerController>();
         controller.GetComponent<PlayerController>().resetCanvas();
+        controller.GetComponent<PlayerController>().TooltipUpdater(controller.GetComponent<PlayerController>().toolTip_Reset);
     }
 
 }

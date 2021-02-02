@@ -14,7 +14,12 @@ public class ClosePanel : MonoBehaviour, IPointerClickHandler
     }
 
     public void OnPointerClick(PointerEventData eventData)
-    { 
+    {
+        DisableTooltip();
+    }
+
+    public void DisableTooltip()
+    {
         this.gameObject.SetActive(false);
 
         if (followUpTooltip != null)
@@ -23,7 +28,7 @@ public class ClosePanel : MonoBehaviour, IPointerClickHandler
             {
                 print("activate tooltip");
                 followUpTooltip.SetActive(true);
-            }     
-        }   
+            }
+        }
     }
 }
