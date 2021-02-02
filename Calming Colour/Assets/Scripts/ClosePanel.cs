@@ -7,6 +7,7 @@ public class ClosePanel : MonoBehaviour, IPointerClickHandler
 {
     public GameObject playerHead;
     public GameObject followUpTooltip;
+    public GameObject parent;
 
     private void FixedUpdate()
     {
@@ -20,8 +21,6 @@ public class ClosePanel : MonoBehaviour, IPointerClickHandler
 
     public void DisableTooltip()
     {
-        this.gameObject.SetActive(false);
-
         if (followUpTooltip != null)
         {
             if (followUpTooltip.activeInHierarchy == false)
@@ -30,5 +29,7 @@ public class ClosePanel : MonoBehaviour, IPointerClickHandler
                 followUpTooltip.SetActive(true);
             }
         }
+
+        parent.SetActive(false);
     }
 }

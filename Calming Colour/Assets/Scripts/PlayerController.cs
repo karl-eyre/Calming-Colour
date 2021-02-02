@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour
     //Reload canvas
     public void resetCanvas()
     {
-        GameObject mosaicClone = Instantiate(nextMosaicCanvas, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+        GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
         Destroy(mosaicCanvas);
         mosaicCanvas = mosaicClone;
     }
@@ -126,6 +126,7 @@ public class PlayerController : MonoBehaviour
     //swap mosaic
     public void SwapMosaic(int i)
     {
+        //futureMosaics[whichMosaic] = mosaicCanvas;
         ChangeMosaicCount(i);
         GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
         Destroy(mosaicCanvas);
