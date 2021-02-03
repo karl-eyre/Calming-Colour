@@ -114,7 +114,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &6
 MonoBehaviour:
@@ -180,10 +180,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 494}
-  m_MaxSize: {x: 14002, y: 14044}
+  m_MinSize: {x: 681, y: 494}
+  m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 112
+  controlID: 104
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 52
+  controlID: 105
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 222}
   m_MaxSize: {x: 8004, y: 4022}
   vertical: 0
-  controlID: 53
+  controlID: 106
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -453,21 +453,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4279ffff7879ffff7a7cffffeecfffff8ad4ffff82d5ffff50e7ffffdafaffff8efbffffd64d0000e64d0000a84e0000464f0000fa4f0000e2550000365600007a570000c8570000ae5f0000ca600000745a0200b0680200b66f02004c700200be800200e082020024830200
+      m_ExpandedIDs: b6e6ffff48faffff644f0000c85500004e570000785700001459000062590000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: UICanvas
+        m_OriginalName: UICanvas
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 22882
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 11}
       m_SearchString: 
@@ -513,9 +513,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.35977402, y: 1.1711138, z: 3.8902493}
+    m_Target: {x: -0.20798762, y: 0.050262265, z: 7.0967917}
     speed: 2
-    m_Value: {x: -0.35977402, y: 1.1711138, z: 3.8902493}
+    m_Value: {x: -0.20798762, y: 0.05026226, z: 7.0967917}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -544,13 +544,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.1087553, y: 0.1307414, z: -0.009210948, w: -0.9859326}
+    m_Target: {x: -0.15509234, y: 0.074155085, z: -0.0063771307, w: -0.9856347}
     speed: 2
-    m_Value: {x: -0.10865469, y: 0.13510458, z: -0.009695072, w: -0.9848081}
+    m_Value: {x: -0.15353169, y: 0.07412497, z: -0.0062623075, w: -0.98533964}
   m_Size:
-    m_Target: 3.0166554
+    m_Target: 5.116656
     speed: 2
-    m_Value: 2.7166555
+    m_Value: 5.116656
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -613,20 +613,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models
+    - Assets/mosaic/MosaicPrefabs
   m_ViewMode: 1
   m_StartGridSize: 77
   m_LastFolders:
-  - Assets/Models
+  - Assets/mosaic/MosaicPrefabs
   m_LastFoldersGridSize: 77
   m_LastProjectPath: D:\Liminal VR\Calming-Colour\Calming Colour
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 94}
-    m_SelectedIDs: f4470000
-    m_LastClickedID: 18420
-    m_ExpandedIDs: 000000008030000086300000b0310000e6310000723f0000364000006440000080400000f44100004a4200008642000082430000f447000066480000824a0000d44a0000204b00002e4b0000464b00005c92000000ca9a3b
+    scrollPos: {x: 0, y: 142}
+    m_SelectedIDs: 30480000
+    m_LastClickedID: 18480
+    m_ExpandedIDs: 000000006c320000723200009a330000cc33000044410000024200002842000046420000b4430000084400004044000036450000ac4500000a4a00001a4c0000664c0000b04c0000bc4c0000d44c00000894000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -654,7 +654,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008030000086300000b0310000e6310000723f0000364000006440000080400000f4410000864200008243000066480000d44a0000204b00002e4b0000464b00005c920000
+    m_ExpandedIDs: 000000006c320000723200009a330000cc33000044410000024200002842000046420000b44300000844000040440000364500000a4a00001a4c0000664c0000b04c0000bc4c0000d44c000008940000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

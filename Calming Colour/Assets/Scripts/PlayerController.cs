@@ -20,10 +20,9 @@ public class PlayerController : MonoBehaviour
 
     public List<GameObject> futureMosaics;
 
-    int whichMosaic = 0;
+    public int whichMosaic = 0;
 
     public GameObject mosaicCanvas;
-    public GameObject nextMosaicCanvas;
     public GameObject glassFinish;
 
     public List<GameObject> completeCanvases;
@@ -79,7 +78,7 @@ public class PlayerController : MonoBehaviour
         {
             completeMosaicSlider.value += completeSpeed;
 
-            if (completeMosaicSlider.value >= completeMosaicSlider.maxValue)
+            if (completeMosaicSlider.value >= completeMosaicSlider.maxValue & futureMosaics.Count != 1)
             {
                 CompleteMosaic();
             }
@@ -99,7 +98,14 @@ public class PlayerController : MonoBehaviour
             glassFinishClone.transform.parent = mosaicCanvas.transform;
 
             int x = whichMosaic;
-            ChangeMosaicCount(1);
+
+            futureMosaics.Remove(futureMosaics[x]);
+
+            if (futureMosaics.Count == x)
+            {
+                ChangeMosaicCount(0);
+            }
+
             GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
 
             mosaicCanvas.transform.parent = i.transform;
@@ -107,8 +113,6 @@ public class PlayerController : MonoBehaviour
             mosaicCanvas.transform.rotation = i.transform.rotation;
             completeCanvases.Remove(i);
 
-            futureMosaics.Remove(futureMosaics[x]);
-            
             mosaicCanvas = mosaicClone;
 
             TooltipUpdater(toolTip_Complete);
