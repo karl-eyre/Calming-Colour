@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -7,13 +8,15 @@ public class ColourSelect : MonoBehaviour, IPointerClickHandler, IPointerDownHan
 {
     public GameObject curentHeldColour;
     public GameObject tileHomer;
+    public static event EventHandler onColorSelect;
+    
 
     public void OnPointerClick(PointerEventData eventData)
     {
         var raycastResult = eventData.pointerCurrentRaycast;
 
         //Debug.Log("You have clicked" + raycastResult.gameObject.GetComponent<Renderer>().material);
-
+        onColorSelect?.Invoke(this, EventArgs.Empty);
         var controller = GameObject.Find("VRAvatar").GetComponent<PlayerController>();
         controller.colourSelection = raycastResult.gameObject.GetComponent<Renderer>().material;
         curentHeldColour.gameObject.GetComponent<Renderer>().material = raycastResult.gameObject.GetComponent<Renderer>().material;
