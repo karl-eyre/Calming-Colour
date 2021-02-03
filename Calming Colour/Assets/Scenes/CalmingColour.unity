@@ -4622,6 +4622,8 @@ MonoBehaviour:
   toolTip_Swap: {fileID: 2667032001821704689}
   toolTip_Storage: {fileID: 2667032003410122462}
   mosaicFader: {fileID: 1489323422}
+  completeMosaicFader: {fileID: 2912449595147485625, guid: 1f1ec3719a43e1948a719d251f09faa9,
+    type: 3}
   futureMosaics:
   - {fileID: 1632569996252564206, guid: 655f9cad6a48502428d1258e20d4b1e8, type: 3}
   - {fileID: 6689129221463484229, guid: 6aeba099a4ad1c644b4e013d1b253e26, type: 3}
@@ -25100,7 +25102,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899731167}
   m_LocalRotation: {x: -0, y: 0.40357998, z: -0, w: 0.9149444}
-  m_LocalPosition: {x: 0, y: 0, z: 4.056}
+  m_LocalPosition: {x: 0, y: 0, z: 4.061}
   m_LocalScale: {x: 0.3440642, y: 0.34406403, z: 0.00744108}
   m_Children:
   - {fileID: 1614018371}
@@ -25109,7 +25111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 47.604004, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.986, y: 0.37}
+  m_AnchoredPosition: {x: 0.992, y: 0.37}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &899731169
@@ -41371,7 +41373,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e1a733104a528eb46907cbbbb0061f6b,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2630391
+      value: -1.263039
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e1a733104a528eb46907cbbbb0061f6b,
         type: 3}
@@ -44059,7 +44061,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a5044e7a9ec002d4a83553ffbef693de, type: 2}
+      objectReference: {fileID: 2100000, guid: f17be03acf8f60b41be171a3ddac751b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b4f2fe2a0b072a43a0465dad28d57b5, type: 3}
 --- !u!1 &1788471684 stripped
@@ -48364,7 +48366,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e1a733104a528eb46907cbbbb0061f6b,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2630391
+      value: -1.263039
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e1a733104a528eb46907cbbbb0061f6b,
         type: 3}
