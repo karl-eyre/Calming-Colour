@@ -128,10 +128,9 @@ public class PlayerController : MonoBehaviour
     IEnumerator MosaicCompleteTransition(GameObject i)
     {
         mosaicFadeAnimator.SetTrigger("FadeOut");
+        Instantiate(completeMosaicFader, i.transform);
         yield return new WaitForSeconds(mosaicFadeAnimator.runtimeAnimatorController.animationClips.Length / 2);
         GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
-        Instantiate(completeMosaicFader, i.transform);
-
         mosaicCanvas.transform.parent = i.transform;
         mosaicCanvas.transform.position = i.transform.position;
         mosaicCanvas.transform.rotation = i.transform.rotation;
