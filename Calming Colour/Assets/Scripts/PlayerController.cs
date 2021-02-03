@@ -10,6 +10,14 @@ public class PlayerController : MonoBehaviour
 {
     public Material colourSelection;
 
+    //tooltip Values
+    public GameObject toolTip_SelectColour;
+    public GameObject toolTip_PlaceColour;
+    public GameObject toolTip_Reset;
+    public GameObject toolTip_Complete;
+    public GameObject toolTip_Swap;
+    public GameObject toolTip_Storage;
+
     public List<GameObject> futureMosaics;
 
     int whichMosaic = 0;
@@ -24,6 +32,8 @@ public class PlayerController : MonoBehaviour
     public bool completeMosaic = false;
 
     public bool fastPlacePiece = false;
+
+    public float completeSpeed = 1.5f;
 
     void Update()
     { 
@@ -61,11 +71,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     private void FixedUpdate()
     {
+        //increase slider when held
         if (completeMosaic == true)
         {
-            completeMosaicSlider.value += 0.7f;
+            completeMosaicSlider.value += completeSpeed;
 
             if (completeMosaicSlider.value >= completeMosaicSlider.maxValue)
             {
@@ -74,6 +86,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //complete mosaic
     void CompleteMosaic()
     {
         GameObject i = completeCanvases[0];
@@ -97,24 +110,30 @@ public class PlayerController : MonoBehaviour
             futureMosaics.Remove(futureMosaics[x]);
             
             mosaicCanvas = mosaicClone;
+
+            TooltipUpdater(toolTip_Complete);
         }
     }
 
+    //Reload canvas
     public void resetCanvas()
     {
-        GameObject mosaicClone = Instantiate(nextMosaicCanvas, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+        GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
         Destroy(mosaicCanvas);
         mosaicCanvas = mosaicClone;
     }
 
+    //swap mosaic
     public void SwapMosaic(int i)
     {
+        //futureMosaics[whichMosaic] = mosaicCanvas;
         ChangeMosaicCount(i);
         GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
         Destroy(mosaicCanvas);
         mosaicCanvas = mosaicClone;
     }
 
+    //update count to match list of available mosaics
     void ChangeMosaicCount(int i)
     {
         if (whichMosaic + i >= futureMosaics.Count)
@@ -130,6 +149,16 @@ public class PlayerController : MonoBehaviour
             whichMosaic += i;
         }
         print(whichMosaic);
+    }
+
+    //Remove called tooltip
+    public void TooltipUpdater(GameObject g)
+    {
+        if (g.activeInHierarchy == true)
+        {
+            g.GetComponent<ClosePanel>().DisableTooltip();
+        }
+
     }
 
 }

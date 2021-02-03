@@ -17,7 +17,9 @@ public class ColourAdd : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
         var raycastResult = eventData.pointerCurrentRaycast;
 
         var controller = GameObject.Find("VRAvatar").GetComponent<PlayerController>();
-        if (controller.colourSelection != null) 
+        controller.GetComponent<PlayerController>().TooltipUpdater(controller.GetComponent<PlayerController>().toolTip_PlaceColour);
+
+        if (controller.colourSelection != null)
         {
             onColorAdd?.Invoke(this, EventArgs.Empty);
             curentColour = controller.colourSelection;
