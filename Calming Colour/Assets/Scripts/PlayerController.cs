@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour
     public GameObject toolTip_Swap;
     public GameObject toolTip_Storage;
 
+    public GameObject mosaicFader;
+    Animator mosaicFadeAnimator;
+    bool transitioningMosaic = false;
+
     public List<GameObject> futureMosaics;
 
     public int whichMosaic = 0;
@@ -33,6 +37,11 @@ public class PlayerController : MonoBehaviour
     public bool fastPlacePiece = false;
 
     public float completeSpeed = 1.5f;
+
+    private void Start()
+    {
+        mosaicFadeAnimator = mosaicFader.GetComponent<Animator>();
+    }
 
     void Update()
     { 
@@ -106,17 +115,39 @@ public class PlayerController : MonoBehaviour
                 ChangeMosaicCount(0);
             }
 
-            GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+            StartCoroutine(MosaicCompleteTransition(i));
 
-            mosaicCanvas.transform.parent = i.transform;
-            mosaicCanvas.transform.position = i.transform.position;
-            mosaicCanvas.transform.rotation = i.transform.rotation;
-            completeCanvases.Remove(i);
+            //GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
 
-            mosaicCanvas = mosaicClone;
-
-            TooltipUpdater(toolTip_Complete);
+            TooltipUpdater(toolTip_Complete);      
         }
+    }
+
+    IEnumerator MosaicCompleteTransition(GameObject i)
+    {
+        mosaicFadeAnimator.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(mosaicFadeAnimator.runtimeAnimatorController.animationClips.Length / 2);
+        GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+
+        mosaicCanvas.transform.parent = i.transform;
+        mosaicCanvas.transform.position = i.transform.position;
+        mosaicCanvas.transform.rotation = i.transform.rotation;
+        completeCanvases.Remove(i);
+
+        mosaicCanvas = mosaicClone;
+    }
+
+    IEnumerator MosaicSwapTransition()
+    {
+        transitioningMosaic = true;
+        
+        mosaicFadeAnimator.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(mosaicFadeAnimator.runtimeAnimatorController.animationClips.Length / 2);
+        GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+        Destroy(mosaicCanvas);
+        mosaicCanvas = mosaicClone;
+
+        transitioningMosaic = false;
     }
 
     //Reload canvas
@@ -130,11 +161,12 @@ public class PlayerController : MonoBehaviour
     //swap mosaic
     public void SwapMosaic(int i)
     {
+        if (transitioningMosaic == false)
+        {
+            StartCoroutine(MosaicSwapTransition());
+            ChangeMosaicCount(i);
+        }
         //futureMosaics[whichMosaic] = mosaicCanvas;
-        ChangeMosaicCount(i);
-        GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
-        Destroy(mosaicCanvas);
-        mosaicCanvas = mosaicClone;
     }
 
     //update count to match list of available mosaics
