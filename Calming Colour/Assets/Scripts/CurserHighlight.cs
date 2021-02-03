@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CurserHighlight : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class CurserHighlight : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler
 {
     Material startingColour;
     public Material highlightColour;
+    public Material PressedColour;
+    bool pressed = false;
+    bool highlighted = false;
     Renderer rend;
 
     // Start is called before the first frame update
@@ -19,12 +22,34 @@ public class CurserHighlight : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnPointerEnter(PointerEventData eventData)
     {
         rend.material = highlightColour;
+        highlighted = true;
     }
 
     //Reset off of temp colour
     public void OnPointerExit(PointerEventData eventData)
     {
-        rend.material = startingColour;
+        if (pressed == false) 
+        {
+            rend.material = startingColour;
+        }
+
+        highlighted = false;
     }
 
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        rend.material = PressedColour;
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        if (highlighted == false)
+        {
+            rend.material = startingColour;
+        }
+        else
+        {
+            rend.material = highlightColour;
+        }        
+    }
 }

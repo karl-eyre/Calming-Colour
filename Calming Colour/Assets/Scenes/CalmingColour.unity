@@ -1912,7 +1912,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 899731168}
   - {fileID: 915793841}
   - {fileID: 668369411}
   - {fileID: 1849112150}
@@ -2601,7 +2600,7 @@ RectTransform:
   - {fileID: 1075515104}
   - {fileID: 2667032003410122463}
   m_Father: {fileID: 96283062}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21034,7 +21033,7 @@ RectTransform:
   - {fileID: 616504486}
   - {fileID: 2667032002326934838}
   m_Father: {fileID: 96283062}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21198,6 +21197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightColour: {fileID: 2100000, guid: 129f0c60f9953bb4c8d6119144c38af7, type: 2}
+  PressedColour: {fileID: 2100000, guid: ea842075a9f016049a58b513ffc3a659, type: 2}
 --- !u!4 &674476326 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 114e82b6fc9f93d4a8a4733712be56b6,
@@ -25747,6 +25747,7 @@ GameObject:
   - component: {fileID: 899731171}
   - component: {fileID: 899731170}
   - component: {fileID: 899731169}
+  - component: {fileID: 899731173}
   m_Layer: 5
   m_Name: Tooltips Loader
   m_TagString: Untagged
@@ -25762,16 +25763,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899731167}
   m_LocalRotation: {x: -0, y: 0.40357998, z: -0, w: 0.9149444}
-  m_LocalPosition: {x: 0, y: 0, z: 4.042}
-  m_LocalScale: {x: 0.42421013, y: 0.42421, z: 0.009174397}
+  m_LocalPosition: {x: 0, y: 0, z: 4.056}
+  m_LocalScale: {x: 0.3440642, y: 0.34406403, z: 0.00744108}
   m_Children:
   - {fileID: 1614018371}
-  m_Father: {fileID: 96283062}
-  m_RootOrder: 0
+  m_Father: {fileID: 1155360036}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 47.604004, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.002, y: 0.37}
+  m_AnchoredPosition: {x: 0.986, y: 0.37}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &899731169
@@ -25818,7 +25819,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa7ff65237d116642856ff7ac23d0ba2, type: 2}
+  - {fileID: 2100000, guid: 241f812a757d92c429540e5f7cfe44cf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25846,6 +25847,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899731167}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &899731173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899731167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3df1de3baf3ab7408a93025c5196bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightColour: {fileID: 2100000, guid: 129f0c60f9953bb4c8d6119144c38af7, type: 2}
+  PressedColour: {fileID: 2100000, guid: ea842075a9f016049a58b513ffc3a659, type: 2}
 --- !u!1 &902121062 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4872820366549301256, guid: 59c56f620a43e37439eb88cb91157a02,
@@ -26037,7 +26052,7 @@ RectTransform:
   - {fileID: 2667032002740161551}
   - {fileID: 1827685751}
   m_Father: {fileID: 96283062}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -27564,6 +27579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightColour: {fileID: 2100000, guid: 129f0c60f9953bb4c8d6119144c38af7, type: 2}
+  PressedColour: {fileID: 2100000, guid: ea842075a9f016049a58b513ffc3a659, type: 2}
 --- !u!1 &989658514 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 706057148172251361, guid: 59c56f620a43e37439eb88cb91157a02,
@@ -30648,6 +30664,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 96283062}
+  - {fileID: 899731168}
   - {fileID: 514328970}
   m_Father: {fileID: 1123789506}
   m_RootOrder: 1
@@ -36505,6 +36522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightColour: {fileID: 2100000, guid: 129f0c60f9953bb4c8d6119144c38af7, type: 2}
+  PressedColour: {fileID: 2100000, guid: ea842075a9f016049a58b513ffc3a659, type: 2}
 --- !u!1001 &1409608022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36955,6 +36973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightColour: {fileID: 2100000, guid: 129f0c60f9953bb4c8d6119144c38af7, type: 2}
+  PressedColour: {fileID: 2100000, guid: ea842075a9f016049a58b513ffc3a659, type: 2}
 --- !u!1 &1427052136 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3877460389671557065, guid: 59c56f620a43e37439eb88cb91157a02,
@@ -45948,7 +45967,7 @@ RectTransform:
   - {fileID: 763069234}
   - {fileID: 2667032002078945845}
   m_Father: {fileID: 96283062}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -46545,7 +46564,7 @@ RectTransform:
   - {fileID: 1305293583}
   - {fileID: 997192583}
   m_Father: {fileID: 96283062}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -52285,7 +52304,7 @@ RectTransform:
   - {fileID: 1100240829}
   - {fileID: 2667032001821704688}
   m_Father: {fileID: 96283062}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -53198,8 +53217,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'When a new mosaic partern is completed it will be placed on the next available
-    canvas (Look to the left). '
+  m_Text: When a new mosaic pattern is completed it will be placed on the next available
+    canvas (Look to the left).
 --- !u!222 &2667032002707684562
 CanvasRenderer:
   m_ObjectHideFlags: 0
