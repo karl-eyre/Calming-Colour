@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         mosaicFadeAnimator = mosaicFader.GetComponent<Animator>();
+        GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+        mosaicCanvas = mosaicClone;
     }
 
     void Update()
@@ -144,23 +146,36 @@ public class PlayerController : MonoBehaviour
     {
         if (transitioningMosaic == false)
         {
-            StartCoroutine(MosaicSwapTransition());
-            ChangeMosaicCount(i);
+            StartCoroutine(MosaicSwapTransition(i));
+            
         }
         //futureMosaics[whichMosaic] = mosaicCanvas;
     }
 
-    IEnumerator MosaicSwapTransition()
+    IEnumerator MosaicSwapTransition(int i)
     {
         transitioningMosaic = true;
-        
-        mosaicFadeAnimator.SetTrigger("FadeOut");
-        yield return new WaitForSeconds(mosaicFadeAnimator.runtimeAnimatorController.animationClips.Length / 2);
-        GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
-        Destroy(mosaicCanvas);
-        mosaicCanvas = mosaicClone;
 
-        print("Ani Time " + mosaicFadeAnimator.runtimeAnimatorController.animationClips.Length / 2);
+        futureMosaics[whichMosaic] = mosaicCanvas;
+        mosaicFadeAnimator.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(mosaicFadeAnimator.runtimeAnimatorController.animationClips.Length / 2); 
+        mosaicCanvas.SetActive(false);
+
+        ChangeMosaicCount(i);
+
+        if (futureMosaics[whichMosaic].name.Contains("Clone"))
+        {
+            futureMosaics[whichMosaic].SetActive(true);
+            mosaicCanvas = futureMosaics[whichMosaic];
+        }
+        else
+        {
+            GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+            mosaicCanvas = mosaicClone;
+        }
+        //futureMosaics[whichMosaic] = mosaicCanvas;
+
+        //print("Ani Time " + mosaicFadeAnimator.runtimeAnimatorController.animationClips.Length / 2);
 
         transitioningMosaic = false;
     }
