@@ -9,7 +9,7 @@ using UnityEngine.EventSystems;
 public class ColourAdd : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     Material curentColour;
-    public static event EventHandler onColorAdd; 
+    public static event EventHandler onColorAdd;
 
     //add new colour
     public void OnPointerClick(PointerEventData eventData)
@@ -38,7 +38,14 @@ public class ColourAdd : MonoBehaviour, IPointerClickHandler, IPointerEnterHandl
 
         if (controller.colourSelection != null)
         {
-            raycastResult.gameObject.GetComponent<Renderer>().material = controller.colourSelection;   
+            raycastResult.gameObject.GetComponent<Renderer>().material = controller.colourSelection;
+            
+            //if fastplacing store updated value
+            if (controller.fastPlacePiece == true)
+            {
+                curentColour = controller.colourSelection;
+            }
+
         }       
     }
 
