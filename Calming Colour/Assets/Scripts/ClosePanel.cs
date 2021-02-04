@@ -11,6 +11,8 @@ public class ClosePanel : MonoBehaviour, IPointerClickHandler
     public static event EventHandler ONPanelClose; 
     public GameObject parent;
 
+    public bool clickToDisableClick = false;
+
     private void FixedUpdate()
     {
         this.transform.LookAt(playerHead.transform);
@@ -18,9 +20,11 @@ public class ClosePanel : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        ONPanelClose?.Invoke(this, EventArgs.Empty);
-
-        DisableTooltip();
+        if (clickToDisableClick != true) 
+        {
+            ONPanelClose?.Invoke(this, EventArgs.Empty);
+            DisableTooltip();
+        }
     }
 
     public void DisableTooltip()

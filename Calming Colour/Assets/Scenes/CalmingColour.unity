@@ -2472,8 +2472,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 3.385}
   m_LocalScale: {x: -0.000802436, y: 0.00080243574, z: 0.0008024359}
   m_Children:
-  - {fileID: 1075515104}
   - {fileID: 2667032003410122463}
+  - {fileID: 1075515104}
   m_Father: {fileID: 96283062}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27036,7 +27036,7 @@ RectTransform:
   - {fileID: 290019720}
   - {fileID: 7236659683632407986}
   m_Father: {fileID: 1886095609}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -28697,6 +28697,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2143452090}
     m_Modifications:
+    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
+        type: 3}
+      propertyPath: m_Name
+      value: Held Tile Particle System (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28766,11 +28771,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.0656147
-      objectReference: {fileID: 0}
-    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
-        type: 3}
-      propertyPath: m_Name
-      value: Held Tile Particle System (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
@@ -29985,7 +29985,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!1 &1156568987 stripped
 GameObject:
@@ -40245,7 +40245,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614018370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.3}
+  m_LocalPosition: {x: 0, y: 0, z: -1.9}
   m_LocalScale: {x: 0.005469285, y: 0.005469285, z: 0.005469285}
   m_Children: []
   m_Father: {fileID: 899731168}
@@ -40286,8 +40286,8 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: '?'
 --- !u!222 &1614018373
@@ -44657,6 +44657,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 915793841}
     m_Modifications:
+    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
+        type: 3}
+      propertyPath: m_Name
+      value: Held Tile Particle System (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44726,11 +44731,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.0560203
-      objectReference: {fileID: 0}
-    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
-        type: 3}
-      propertyPath: m_Name
-      value: Held Tile Particle System (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
@@ -45723,8 +45723,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 4.023}
   m_LocalScale: {x: -0.00033451273, y: 0.00033451273, z: 0.00033451273}
   m_Children:
-  - {fileID: 1305293583}
   - {fileID: 997192583}
+  - {fileID: 1305293583}
   m_Father: {fileID: 96283062}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -51520,6 +51520,7 @@ MonoBehaviour:
   playerHead: {fileID: 27881633}
   followUpTooltip: {fileID: 144582315}
   parent: {fileID: 1886095608}
+  clickToDisableClick: 0
 --- !u!222 &2070598352803533106
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -52785,7 +52786,7 @@ RectTransform:
   - {fileID: 2667032002707684560}
   - {fileID: 4714975093417623786}
   m_Father: {fileID: 144582316}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -52807,6 +52808,7 @@ MonoBehaviour:
   playerHead: {fileID: 27881633}
   followUpTooltip: {fileID: 1886095608}
   parent: {fileID: 2143452089}
+  clickToDisableClick: 0
 --- !u!114 &3045664118566724869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52822,6 +52824,7 @@ MonoBehaviour:
   playerHead: {fileID: 27881633}
   followUpTooltip: {fileID: 1849112149}
   parent: {fileID: 668369410}
+  clickToDisableClick: 1
 --- !u!114 &3045664118688883206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52837,6 +52840,7 @@ MonoBehaviour:
   playerHead: {fileID: 27881633}
   followUpTooltip: {fileID: 2143452089}
   parent: {fileID: 1849112149}
+  clickToDisableClick: 0
 --- !u!114 &3045664119647815404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52852,6 +52856,7 @@ MonoBehaviour:
   playerHead: {fileID: 27881633}
   followUpTooltip: {fileID: 0}
   parent: {fileID: 144582315}
+  clickToDisableClick: 0
 --- !u!114 &3045664120322137148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52867,6 +52872,7 @@ MonoBehaviour:
   playerHead: {fileID: 27881633}
   followUpTooltip: {fileID: 668369410}
   parent: {fileID: 915793840}
+  clickToDisableClick: 1
 --- !u!114 &4074382723621970176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52934,7 +52940,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Click on this pannel to close
+  m_Text: Complete the action to remove panel
 --- !u!114 &4074382723913142981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53036,7 +53042,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Click on this pannel to close
+  m_Text: Complete the action to remove panel
 --- !u!222 &4161059160535622469
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -53192,6 +53198,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2143452090}
     m_Modifications:
+    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
+        type: 3}
+      propertyPath: m_Name
+      value: Held Tile Particle System
+      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -53262,11 +53273,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.051957
       objectReference: {fileID: 0}
-    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
-        type: 3}
-      propertyPath: m_Name
-      value: Held Tile Particle System
-      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_UseCustomVertexStreams
@@ -53306,6 +53312,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 668369411}
     m_Modifications:
+    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
+        type: 3}
+      propertyPath: m_Name
+      value: Held Tile Particle System
+      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -53376,11 +53387,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.051957
       objectReference: {fileID: 0}
-    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
-        type: 3}
-      propertyPath: m_Name
-      value: Held Tile Particle System
-      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_UseCustomVertexStreams
@@ -53420,20 +53426,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1849112150}
     m_Modifications:
+    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
+        type: 3}
+      propertyPath: m_Name
+      value: Held Tile Particle System
+      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 68
+      value: 193
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -250
+      value: -112
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -229
+      value: -474
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
@@ -53490,11 +53501,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.051957
       objectReference: {fileID: 0}
-    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
-        type: 3}
-      propertyPath: m_Name
-      value: Held Tile Particle System
-      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_UseCustomVertexStreams
@@ -53539,6 +53545,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 915793841}
     m_Modifications:
+    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
+        type: 3}
+      propertyPath: m_Name
+      value: Held Tile Particle System
+      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -53609,11 +53620,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4.0519576
       objectReference: {fileID: 0}
-    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
-        type: 3}
-      propertyPath: m_Name
-      value: Held Tile Particle System
-      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_UseCustomVertexStreams
@@ -53653,6 +53659,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 144582316}
     m_Modifications:
+    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
+        type: 3}
+      propertyPath: m_Name
+      value: Held Tile Particle System
+      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -53691,7 +53702,7 @@ PrefabInstance:
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
@@ -53722,11 +53733,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.051958
-      objectReference: {fileID: 0}
-    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
-        type: 3}
-      propertyPath: m_Name
-      value: Held Tile Particle System
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
@@ -53767,6 +53773,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2134802431}
     m_Modifications:
+    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
+        type: 3}
+      propertyPath: m_Name
+      value: Held Tile Particle System
+      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -53821,11 +53832,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
-        type: 3}
-      propertyPath: m_Name
-      value: Held Tile Particle System
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c5f207ba0d720d43b7ac50173ec7b1a, type: 3}
@@ -53882,7 +53888,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6830609248342061408
 GameObject:
   m_ObjectHideFlags: 0
@@ -54010,20 +54016,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1886095609}
     m_Modifications:
+    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
+        type: 3}
+      propertyPath: m_Name
+      value: Held Tile Particle System
+      objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -44
+      value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -347
+      value: -152
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -113
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
@@ -54048,7 +54059,7 @@ PrefabInstance:
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440992, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
@@ -54079,11 +54090,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 4.051957
-      objectReference: {fileID: 0}
-    - target: {fileID: 6415523160374441023, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
-        type: 3}
-      propertyPath: m_Name
-      value: Held Tile Particle System
       objectReference: {fileID: 0}
     - target: {fileID: 6415523160374440993, guid: 2c5f207ba0d720d43b7ac50173ec7b1a,
         type: 3}
