@@ -901,6 +901,7 @@ GameObject:
   - component: {fileID: 50560990}
   - component: {fileID: 50560993}
   - component: {fileID: 50560992}
+  - component: {fileID: 50560994}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
@@ -917,12 +918,13 @@ AudioSource:
   m_GameObject: {fileID: 50560989}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -4159830348240944103, guid: 50e3e8ee8421e6645b6a11f895c3d243,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 3975da66094152840b87592321b6f005, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1027,7 +1029,8 @@ AudioSource:
   m_GameObject: {fileID: 50560989}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -6060181293586280701, guid: 50e3e8ee8421e6645b6a11f895c3d243,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -1130,6 +1133,21 @@ MonoBehaviour:
   menuClose: {fileID: 8300000, guid: 953f6cc884c94144195ed872925f974f, type: 3}
   paint: {fileID: 8300000, guid: 9eb9afecc8605e94e80d59ac7d3fc2ea, type: 3}
   paintSelect: {fileID: 8300000, guid: fec9b1dbce48cc14fba25dc15f091501, type: 3}
+--- !u!114 &50560994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50560989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5d43923a4bbb0940b041c5835344c81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 50560990}
+  fadeInSnapshot: {fileID: 24500006, guid: 50e3e8ee8421e6645b6a11f895c3d243, type: 2}
+  fadeInTime: 4
 --- !u!1 &54340004 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 126165003182751998, guid: 59c56f620a43e37439eb88cb91157a02,

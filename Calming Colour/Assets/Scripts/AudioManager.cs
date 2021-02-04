@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip paint;
     public AudioClip paintSelect;
     
-    private void Awake()
+    private void Start()
     {
         ColourSelect.onColorSelect += ColourSelectOnonColorSelect;
         ColourAdd.onColorAdd += onColourAddOncolorAdd;
@@ -42,5 +42,6 @@ public class AudioManager : MonoBehaviour
     {
         ColourSelect.onColorSelect -= ColourSelectOnonColorSelect;
         ColourAdd.onColorAdd -= onColourAddOncolorAdd;
+        ClosePanel.ONPanelClose -= ClosePanelOnONPanelClose;
     }
 }
