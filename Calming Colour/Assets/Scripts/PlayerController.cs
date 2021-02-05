@@ -50,13 +50,14 @@ public class PlayerController : MonoBehaviour
     void Update()
     { 
         var primaryInput = VRDevice.Device.PrimaryInputDevice;
+        //var secondaryInput = VRDevice.Device.SecondaryInputDevice;
 
-        if (primaryInput.GetButtonDown(VRButton.One))
+        if (primaryInput.GetButtonDown(VRButton.One) /*| secondaryInput.GetButtonDown(VRButton.One)*/)
         {
             fastPlacePiece = true;
             print("You are now fast placing tiles");
         }
-        if (primaryInput.GetButtonUp(VRButton.One))
+        if (primaryInput.GetButtonUp(VRButton.One) /*| secondaryInput.GetButtonDown(VRButton.One)*/)
         {
             fastPlacePiece = false;
 

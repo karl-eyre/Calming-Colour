@@ -20623,5 +20623,15 @@ PrefabInstance:
       propertyPath: tileHomer
       value: 
       objectReference: {fileID: 1186326103}
+    - target: {fileID: 5453075886166503046, guid: de24cae75dd18ba44b30a144c7d74847,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.211
+      objectReference: {fileID: 0}
+    - target: {fileID: 8941393120237979404, guid: de24cae75dd18ba44b30a144c7d74847,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.04
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de24cae75dd18ba44b30a144c7d74847, type: 3}

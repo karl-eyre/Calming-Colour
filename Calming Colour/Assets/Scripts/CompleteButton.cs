@@ -11,10 +11,11 @@ public class CompleteButton : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         var primaryInput = VRDevice.Device.PrimaryInputDevice;
+        //var secondaryInput = VRDevice.Device.SecondaryInputDevice;
 
         var controller = GameObject.Find("VRAvatar").GetComponent<PlayerController>();
 
-        if (primaryInput.GetButtonDown(VRButton.One))
+        if (primaryInput.GetButtonDown(VRButton.One) /*| secondaryInput.GetButtonDown(VRButton.One)*/)
         {
             controller.GetComponent<PlayerController>().completeMosaic = true;
         }
