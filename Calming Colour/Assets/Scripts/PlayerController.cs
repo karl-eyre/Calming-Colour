@@ -132,13 +132,33 @@ public class PlayerController : MonoBehaviour
         mosaicFadeAnimator.SetTrigger("FadeOut");
         Instantiate(completeMosaicFader, i.transform);
         yield return new WaitForSeconds(mosaicFadeAnimator.runtimeAnimatorController.animationClips.Length / 2);
-        GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
-        mosaicCanvas.transform.parent = i.transform;
-        mosaicCanvas.transform.position = i.transform.position;
-        mosaicCanvas.transform.rotation = i.transform.rotation;
+
+        //GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+
+        if (futureMosaics[whichMosaic].name.Contains("Clone"))
+        {
+            futureMosaics[whichMosaic].SetActive(true);
+
+            mosaicCanvas.transform.parent = i.transform;
+            mosaicCanvas.transform.position = i.transform.position;
+            mosaicCanvas.transform.rotation = i.transform.rotation;
+
+            mosaicCanvas = futureMosaics[whichMosaic];
+        }
+        else
+        {
+            GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+
+            mosaicCanvas.transform.parent = i.transform;
+            mosaicCanvas.transform.position = i.transform.position;
+            mosaicCanvas.transform.rotation = i.transform.rotation;
+
+            mosaicCanvas = mosaicClone;
+        }
+
         completeCanvases.Remove(i);
 
-        mosaicCanvas = mosaicClone;
+        //mosaicCanvas = mosaicClone;
     }
 
     //swap mosaic
@@ -146,8 +166,7 @@ public class PlayerController : MonoBehaviour
     {
         if (transitioningMosaic == false)
         {
-            StartCoroutine(MosaicSwapTransition(i));
-            
+            StartCoroutine(MosaicSwapTransition(i));  
         }
         //futureMosaics[whichMosaic] = mosaicCanvas;
     }
