@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1924725027049322090}
   - component: {fileID: 45733527747502859}
   - component: {fileID: 3030072419347563493}
+  - component: {fileID: 7776833463400201572}
+  - component: {fileID: 7350440216091547634}
   m_Layer: 0
   m_Name: TileBase
   m_TagString: Untagged
@@ -77,6 +79,34 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3237708723392791673}
+  m_Mesh: {fileID: -1317557585453564502, guid: 2a36295961393794eb40d2bd06baa998, type: 3}
+--- !u!114 &7776833463400201572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3237708723392791673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec7879c3756d5be43b6e924bd2502abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curentHeldColour: {fileID: 0}
+  tileHomer: {fileID: 0}
+--- !u!64 &7350440216091547634
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3237708723392791673}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
   m_Mesh: {fileID: -1317557585453564502, guid: 2a36295961393794eb40d2bd06baa998, type: 3}
 --- !u!1 &6011838825688219834
 GameObject:
