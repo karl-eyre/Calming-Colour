@@ -108,8 +108,8 @@ public class PlayerController : MonoBehaviour
         {
             completeMosaicSlider.value = completeMosaicSlider.minValue;
             completeMosaic = false;
-            GameObject glassFinishClone = Instantiate(glassFinish, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
-            glassFinishClone.transform.parent = mosaicCanvas.transform;
+            //GameObject glassFinishClone = Instantiate(glassFinish, mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
+            //glassFinishClone.transform.parent = mosaicCanvas.transform;
 
             int x = whichMosaic;
 
