@@ -15,6 +15,7 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 2541944451165204941}
+  - {fileID: 1604591964291133307}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -123,7 +124,31 @@ AudioMixerSnapshotController:
   m_SnapshotID: f6af1f0585605d24da7af778ab2fc96f
   m_FloatValues:
     9da1c8d1fb10f644e8651b47fe04ac43: -12.498478
+    59c9042958d1e0e4c83188b78f3cdd50: 1.34
+    1af6e0dae1f5fae4f92c5633e7cdc2c5: 232
+    3ddb0a9cefc444c4582f6324342ed4a3: -17.938717
+    2a94a09ee34bcd24e861405dd065abb0: 0.44
   m_TransitionOverrides: {}
+--- !u!244 &1604591964291133307
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: c20efa6b1ab36c0479b2f0b601e1fc0b
+  m_EffectName: ParamEQ
+  m_MixLevel: 131dc04d95f202f45b86b8600a345862
+  m_Parameters:
+  - m_ParameterName: Center freq
+    m_GUID: 1af6e0dae1f5fae4f92c5633e7cdc2c5
+  - m_ParameterName: Octave range
+    m_GUID: 59c9042958d1e0e4c83188b78f3cdd50
+  - m_ParameterName: Frequency gain
+    m_GUID: 2a94a09ee34bcd24e861405dd065abb0
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &2541944451165204941
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
