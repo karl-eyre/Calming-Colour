@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 45733527747502859}
   - component: {fileID: 3030072419347563493}
   - component: {fileID: 7776833463400201572}
-  - component: {fileID: 7350440216091547634}
+  - component: {fileID: 7842424135115960599}
   m_Layer: 0
   m_Name: TileBase
   m_TagString: Untagged
@@ -94,8 +94,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curentHeldColour: {fileID: 0}
   tileHomer: {fileID: 0}
---- !u!64 &7350440216091547634
-MeshCollider:
+--- !u!65 &7842424135115960599
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104,10 +104,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -1317557585453564502, guid: 2a36295961393794eb40d2bd06baa998, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.98142034, y: 0, z: 0.98142046}
+  m_Center: {x: 0, y: 0.059528153, z: 0.00000004470348}
 --- !u!1 &6011838825688219834
 GameObject:
   m_ObjectHideFlags: 0
