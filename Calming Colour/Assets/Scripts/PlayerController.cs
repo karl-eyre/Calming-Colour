@@ -143,6 +143,7 @@ public class PlayerController : MonoBehaviour
             mosaicCanvas.transform.parent = i.transform;
             mosaicCanvas.transform.position = i.transform.position;
             mosaicCanvas.transform.rotation = i.transform.rotation;
+            mosaicCanvas.transform.localScale = new Vector3(0.15f, 0.12f, 0.15f);
 
             mosaicCanvas = futureMosaics[whichMosaic];
         }
@@ -153,6 +154,7 @@ public class PlayerController : MonoBehaviour
             mosaicCanvas.transform.parent = i.transform;
             mosaicCanvas.transform.position = i.transform.position;
             mosaicCanvas.transform.rotation = i.transform.rotation;
+            mosaicCanvas.transform.localScale = new Vector3(0.15f, 0.12f, 0.15f);
 
             mosaicCanvas = mosaicClone;
         }

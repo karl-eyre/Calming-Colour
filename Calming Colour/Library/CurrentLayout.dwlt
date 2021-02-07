@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 125
+  controlID: 122
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -382,20 +382,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 64a5eaff96a5eaff98a8eaff58ceeaff60ceeaff3ed1eaff4ad1eaff50d1eaff52d1eaffdad1eaffe0d1eaff54d3eaff5ed3eaff18d5eafffcd5eaff7ad6eaff2cd7eaff2ed7eaffa277ebfff87debff9080ebff1c94ebff9aa4ecff5afbecff60fbecffac47f2ff5c3dffff8e3dffff8e40ffff70e1ffff28e6ffffcce6ffff8cfbffff82570000421c0200682202009e240200f6240200ca30020040420200fa510200e05a02005e5f0200
+      m_SelectedIDs: 38f5ffff
+      m_LastClickedID: -2760
+      m_ExpandedIDs: 48dffeff92e7ffff6cf3ffff86f3ffff04f4ffff6ef4ffff94f4ffff9ef4ffffb4f4ffffc6f4ffff38f5ffff3af7ffff56fbffff004e0000224e0000584e00008a4e0000944f0000d44f0000825000009e510000c4510000ea510000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: CompletedMosiac_Hung 1 (1)
-        m_OriginalName: CompletedMosiac_Hung 1 (1)
+        m_Name: Held Tile Particle System
+        m_OriginalName: Held Tile Particle System
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -1386710
+        m_UserData: -100942
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -444,9 +444,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.27685976, y: 0.9525222, z: 1.1091009}
+    m_Target: {x: -1.1548296, y: 1.25311, z: 0.7663255}
     speed: 2
-    m_Value: {x: -0.27685976, y: 0.9525222, z: 1.1091009}
+    m_Value: {x: -1.1548296, y: 1.25311, z: 0.7663255}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -475,13 +475,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.095088676, y: 0.7382473, z: -0.10593442, w: 0.65960246}
+    m_Target: {x: 0.05907176, y: 0.71363825, z: -0.060041934, w: 0.69571185}
     speed: 2
-    m_Value: {x: 0.09590021, y: 0.7389471, z: -0.10716733, w: 0.65823656}
+    m_Value: {x: 0.05897016, y: 0.7145421, z: -0.060118787, w: 0.6945056}
   m_Size:
-    m_Target: 4.58951
+    m_Target: 0.816384
     speed: 2
-    m_Value: 4.28951
+    m_Value: 0.816384
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -570,20 +570,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Materials/Texures
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Materials/Texures
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Liminal VR\Calming-Colour\Calming Colour
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 96300000
-    m_LastClickedID: 12438
-    m_ExpandedIDs: 00000000963000009c3000004a310000da310000103200007c320000b23f000084400000b2400000d04000004a420000a0420000e0420000e24300005c440000f2480000c44b0000d24b0000ea4b00009ebb000000ca9a3b
+    scrollPos: {x: 0, y: 147}
+    m_SelectedIDs: 44440000
+    m_LastClickedID: 17476
+    m_ExpandedIDs: 00000000a2300000a830000056310000e63100001c32000088320000be3f000090400000be400000dc40000056420000ac420000ec420000ee4300006844000002490000d44b0000e24b0000fa4b00002061000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -611,7 +611,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000963000009c3000004a310000da310000103200007c320000b23f000084400000b2400000d04000004a420000a0420000e0420000e2430000f2480000c44b0000d24b0000ea4b00009ebb0000
+    m_ExpandedIDs: 00000000a2300000a830000056310000e63100001c32000088320000be3f000090400000be400000dc40000056420000ac420000ec420000ee43000002490000d44b0000e24b0000fa4b000020610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
