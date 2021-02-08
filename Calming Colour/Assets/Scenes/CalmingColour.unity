@@ -21612,6 +21612,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8770776612004780426, guid: f9c1450ae6980a54eb4690aebfd11248,
         type: 3}
+      propertyPath: futureMosaics.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770776612004780426, guid: f9c1450ae6980a54eb4690aebfd11248,
+        type: 3}
       propertyPath: mosaicCanvas
       value: 
       objectReference: {fileID: 6689129222753515880}
@@ -21690,6 +21695,12 @@ PrefabInstance:
       propertyPath: completeMosaicFader
       value: 
       objectReference: {fileID: 2912449595147485625, guid: 1f1ec3719a43e1948a719d251f09faa9,
+        type: 3}
+    - target: {fileID: 8770776612004780426, guid: f9c1450ae6980a54eb4690aebfd11248,
+        type: 3}
+      propertyPath: futureMosaics.Array.data[4]
+      value: 
+      objectReference: {fileID: 8487867075096163008, guid: c6b7402853aeb7f4d9d90534ec311827,
         type: 3}
     - target: {fileID: 8770776611592803482, guid: f9c1450ae6980a54eb4690aebfd11248,
         type: 3}
