@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -14404,13 +14404,13 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 7.16e-43, w: 0.0000019986655}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -15234,13 +15234,13 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: NaN, z: 7.16e-43, w: 0.0000019986655}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -15490,13 +15490,13 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: -21.894814, y: 1.0898622e+17, z: NaN, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -16635,13 +16635,13 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0.00000046039145, z: 7.16e-43, w: 0.0000009036162}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -22982,6 +22982,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_MaskInteraction
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682002238549087531, guid: f9c1450ae6980a54eb4690aebfd11248,
+        type: 3}
+      propertyPath: m_Text
+      value: Select a colour from the the tile palette to begin.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682002238952673275, guid: f9c1450ae6980a54eb4690aebfd11248,
+        type: 3}
+      propertyPath: m_Text
+      value: When a new mosaic is completed it will be placed on the next available
+        canvas.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682002240035875858, guid: f9c1450ae6980a54eb4690aebfd11248,
+        type: 3}
+      propertyPath: m_Text
+      value: Click on a tile to change its colour.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6682002240250309393, guid: f9c1450ae6980a54eb4690aebfd11248,
+        type: 3}
+      propertyPath: m_Text
+      value: Click "Reset" to clear your Mosaic of all colours.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770776612185025187, guid: f9c1450ae6980a54eb4690aebfd11248,
+        type: 3}
+      propertyPath: m_Text
+      value: Click & Hold "Complete" to frame your current Mosaic.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9c1450ae6980a54eb4690aebfd11248, type: 3}
