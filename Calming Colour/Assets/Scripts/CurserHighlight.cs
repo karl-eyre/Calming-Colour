@@ -12,6 +12,11 @@ public class CurserHighlight : MonoBehaviour, IPointerEnterHandler, IPointerExit
     bool highlighted = false;
     Renderer rend;
 
+    [SerializeField]
+    AudioSource buttonSound;
+    [SerializeField]
+    AudioClip buttonSoundClip;
+
     // Start is called before the first frame update
     void Start()
     { 
@@ -39,6 +44,7 @@ public class CurserHighlight : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnPointerDown(PointerEventData eventData)
     {
         rend.material = PressedColour;
+        buttonSound.PlayOneShot(buttonSoundClip);        
     }
 
     public void OnPointerUp(PointerEventData eventData)
