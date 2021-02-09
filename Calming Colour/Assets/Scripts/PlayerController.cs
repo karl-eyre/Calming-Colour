@@ -40,6 +40,12 @@ public class PlayerController : MonoBehaviour
 
     public float completeSpeed = 1.5f;
 
+
+    [SerializeField]
+    AudioSource flipSoundSource;
+    [SerializeField]
+    AudioClip flipSoundClip;
+
     private void Start()
     {
         mosaicFadeAnimator = mosaicFader.GetComponent<Animator>();
@@ -132,7 +138,12 @@ public class PlayerController : MonoBehaviour
     {
         mosaicFadeAnimator.SetTrigger("FadeOut");
         Instantiate(completeMosaicFader, i.transform);
+
+        flipSoundSource.pitch = Random.Range(0.95f, 1f);
+        flipSoundSource.PlayOneShot(flipSoundClip);
+
         yield return new WaitForSeconds(mosaicFadeAnimator.runtimeAnimatorController.animationClips.Length / 2);
+               
 
         //GameObject mosaicClone = Instantiate(futureMosaics[whichMosaic], mosaicCanvas.transform.position, mosaicCanvas.transform.rotation);
 

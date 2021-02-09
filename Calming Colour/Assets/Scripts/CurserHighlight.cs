@@ -44,6 +44,8 @@ public class CurserHighlight : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public void OnPointerDown(PointerEventData eventData)
     {
         rend.material = PressedColour;
+
+        buttonSound.pitch = Random.Range(0.95f, 1f);
         buttonSound.PlayOneShot(buttonSoundClip);        
     }
 
