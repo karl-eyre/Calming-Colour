@@ -2524,7 +2524,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7472,7 +7472,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.15
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11111,7 +11111,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14818,7 +14818,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -16900,7 +16900,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.15
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -21052,6 +21052,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2052552206}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2053315404 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8770776611641407767, guid: f9c1450ae6980a54eb4690aebfd11248,
+    type: 3}
+  m_PrefabInstance: {fileID: 8770776611904484138}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2067948323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23507,12 +23513,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a181c48d624a4ae4f877d0d43f97d66f, type: 2}
+      objectReference: {fileID: 2100000, guid: fc229f5274a3f2f4ba6a06d8f12ef4e6, type: 2}
     - target: {fileID: 2355534927308931709, guid: f9c1450ae6980a54eb4690aebfd11248,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: a181c48d624a4ae4f877d0d43f97d66f, type: 2}
+      objectReference: {fileID: 2100000, guid: fc229f5274a3f2f4ba6a06d8f12ef4e6, type: 2}
     - target: {fileID: 6682002238549087531, guid: f9c1450ae6980a54eb4690aebfd11248,
         type: 3}
       propertyPath: m_Text
@@ -23638,6 +23644,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.0000013708075
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770776610789594483, guid: f9c1450ae6980a54eb4690aebfd11248,
+        type: 3}
+      propertyPath: tileHolder
+      value: 
+      objectReference: {fileID: 2053315404}
+    - target: {fileID: 8770776610491379195, guid: f9c1450ae6980a54eb4690aebfd11248,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770776610711073019, guid: f9c1450ae6980a54eb4690aebfd11248,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9c1450ae6980a54eb4690aebfd11248, type: 3}

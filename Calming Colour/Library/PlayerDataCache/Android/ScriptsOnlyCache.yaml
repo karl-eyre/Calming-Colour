@@ -38,6 +38,7 @@ ScriptsOnlyBuild:
     - Liminal.SDK.VR.Pointers.GazePointerVisual
     - Liminal.SDK.VR.Pointers.LaserPointerVisual
     - Liminal.SDK.VR.Pointers.ReticleVisual
+    - Liminal.SDK.VR.VRDeviceMonitor
     LiminalSdk.dll:
     - Liminal.SDK.VR.Avatars.Extensions.GazeInput
     - Liminal.SDK.VR.Devices.GearVR.GearVRCameraRig
@@ -60,6 +61,8 @@ ScriptsOnlyBuild:
     - Valve.VR.SteamVR_Settings
     - Valve.VR.SteamVR_Skeleton_Pose
     - Valve.VR.SteamVR_Skeleton_Poser
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.UI.CanvasScaler
@@ -240,11 +243,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12174}
     - Class: 114
-      Script: {instanceID: 42966}
+      Script: {instanceID: 64306}
     - Class: 114
-      Script: {instanceID: 42988}
+      Script: {instanceID: 64328}
     - Class: 114
-      Script: {instanceID: 43156}
+      Script: {instanceID: 64496}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -596,7 +599,7 @@ ScriptsOnlyBuild:
     className: SpinningCubeExample
   - hash:
       serializedVersion: 2
-      Hash: 4eca36e1bc8dce73adadb38e9209ea83
+      Hash: 75e6f3d0bf9d25b024c94c0008c0bd81
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1178,7 +1181,7 @@ ScriptsOnlyBuild:
     className: AudioManager
   - hash:
       serializedVersion: 2
-      Hash: 1b08d1023563df35aa47d7e0d93a4dce
+      Hash: a6880622495256ec96f42bd9db889e5d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CurserHighlight
