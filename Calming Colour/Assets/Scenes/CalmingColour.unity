@@ -22129,7 +22129,7 @@ PrefabInstance:
     - target: {fileID: 8770776612004780426, guid: f9c1450ae6980a54eb4690aebfd11248,
         type: 3}
       propertyPath: futureMosaics.Array.size
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8770776612004780426, guid: f9c1450ae6980a54eb4690aebfd11248,
         type: 3}
@@ -22264,6 +22264,12 @@ PrefabInstance:
       propertyPath: flipSoundSource
       value: 
       objectReference: {fileID: 1167601635}
+    - target: {fileID: 8770776612004780426, guid: f9c1450ae6980a54eb4690aebfd11248,
+        type: 3}
+      propertyPath: futureMosaics.Array.data[11]
+      value: 
+      objectReference: {fileID: 1287746817624846840, guid: 67ba4d5ed7016224da0b014dd3c1a203,
+        type: 3}
     - target: {fileID: 8770776611592803482, guid: f9c1450ae6980a54eb4690aebfd11248,
         type: 3}
       propertyPath: m_IsActive
